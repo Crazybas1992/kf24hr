@@ -25,14 +25,13 @@ async def on_ready():
     print(f'{bot.user} is Ready')
 
 if __name__ == "__main__":
-    cogs_dir = './cogs'
-    if not os.path.exists(cogs_dir):
-        print("Cogs directory not found, creating one.")
-        os.makedirs(cogs_dir)
-    
-    for file in os.listdir(cogs_dir):
-        if file.endswith('.py'):
-            bot.load_extension(f'cogs.{file[:-3]}')
+    # โหลด Cog จากโฟลเดอร์ cogs และโฟลเดอร์ย่อยทั้งหมด
+    for root, dirs, files in os.walk('./cogs'):
+        for file in files:
+            if file.endswith('.py') and file != '__init__.py':
+                cog_path = os.path.relpath(os.path.join(root, file), start='./cogs')
+                cog_module = cog_path.replace(os.sep, '.').replace('.py', '')
+                bot.load_extension(f'cogs.{cog_module}')
 
     server_on()
     bot.run(os.getenv('TOKEN'))
