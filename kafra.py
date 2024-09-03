@@ -25,13 +25,9 @@ async def on_ready():
     print(f'{bot.user} is Ready')
 
 if __name__ == "__main__":
-    # โหลด Cog จากโฟลเดอร์ cogs และโฟลเดอร์ย่อยทั้งหมด
-    for root, dirs, files in os.walk('./cogs'):
-        for file in files:
-            if file.endswith('.py') and file != '__init__.py':
-                cog_path = os.path.relpath(os.path.join(root, file), start='./cogs')
-                cog_module = cog_path.replace(os.sep, '.').replace('.py', '')
-                bot.load_extension(f'cogs.{cog_module}')
+    for file in os.listdir('./cogs'):
+        if file.endswith('.py'):
+            bot.load_extension(f'cogs.{file[:-3]}')
 
     server_on()
     bot.run(os.getenv('TOKEN'))
