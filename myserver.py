@@ -3,7 +3,7 @@ from threading import Thread
 
 app = Flask('')
 
-@app.rote('/')
+@app.route('/')
 def home():
     return "Server is running!"
 
