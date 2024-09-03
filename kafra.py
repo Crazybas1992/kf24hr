@@ -1,9 +1,7 @@
 # ==================== Import Statements ====================
 import discord
 import os
-import json
 from discord.ext import commands
-
 from myserver import server_on
 
 # กำหนด Intents
@@ -11,10 +9,6 @@ intents = discord.Intents.default()
 intents.message_content = True
 intents.members = True
 intents.guilds = True  # จำเป็นสำหรับคำสั่ง slash
-
-# โหลดข้อมูลจาก config
-with open('config/config.json') as config:
-    data = json.load(config)
 
 # กำหนดตัวแปร GUILD_IDS
 GUILD_IDS = [258360673648508938]
