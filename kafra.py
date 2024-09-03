@@ -25,7 +25,7 @@ async def on_ready():
     print(f'{bot.user} is Ready')
 
 if __name__ == "__main__":
-    for file in os.listdir('./chat'):
+    for file in os.listdir('./cogs'):
         if file.endswith('.py'):
             bot.load_extension(f'cogs.{file[:-3]}')
 
