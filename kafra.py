@@ -1,12 +1,8 @@
 # ==================== Import Statements ====================
 import discord
 import os
-import certifi
-import ssl
 from discord.ext import commands
 from myserver import server_on
-
-ssl._create_default_https_context = ssl.create_default_context(cafile=certifi.where())
 
 # กำหนด Intents
 intents = discord.Intents.default()
