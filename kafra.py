@@ -25,10 +25,11 @@ async def on_ready():
     print(f'{bot.user} is Ready')
 
 if __name__ == "__main__":
-    # โหลด Cog ทั้งหมดจากโฟลเดอร์ cogs
-    for file in os.listdir('./cogs'):
-        if file.endswith('.py'):
-            bot.load_extension(f'cogs.{file[:-3]}')
+    server_on()  # Call server_on before running the bot
+    # โหลด Cog ทั้งหมดจากโฟลเดอร์หลัก (ไม่ใช่โฟลเดอร์ย่อย cogs)
+    for file in os.listdir('.'):  # ใช้โฟลเดอร์หลัก
+        if file.endswith('.py') and file not in ['kafra.py', 'myserver.py']:  # ข้ามไฟล์หลักและไฟล์ server_on
+            bot.load_extension(file[:-3])  # โหลด Cog โดยใช้ชื่อไฟล์ (ตัด .py ออก)
 
     server_on()
     bot.run(os.getenv('TOKEN'))
