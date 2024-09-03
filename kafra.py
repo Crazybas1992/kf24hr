@@ -35,4 +35,4 @@ if __name__ == "__main__":
             bot.load_extension(f'cogs.{file[:-3]}')
 
     server_on()
-    bot.run(bot.token)
+    bot.run(os.getenv('TOKEN'))
