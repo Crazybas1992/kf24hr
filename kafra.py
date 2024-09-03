@@ -19,7 +19,6 @@ class kafra(commands.Bot):
 
 # ==================== Create Bot Instance ====================
 bot = kafra(owner_id=258557300183138304, case_insensitive=True)
-bot.load_extension('cogs.main')  # โหลด Cog จากไฟล์ main.py
 
 @bot.event
 async def on_ready():
