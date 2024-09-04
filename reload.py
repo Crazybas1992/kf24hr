@@ -9,7 +9,7 @@ class Reload(commands.Cog):
         self.bot = bot
 
     @slash_command(guild_ids=GUILD_IDS,
-        description="Reload คำสั่งทั้งหมด"
+        description="🔄 Reload คำสั่งทั้งหมด"
     )
     @commands.has_permissions(administrator=True)  # อนุญาตเฉพาะผู้ดูแลระบบ
     async def reload(self, ctx):
