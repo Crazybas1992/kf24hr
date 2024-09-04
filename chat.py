@@ -28,16 +28,16 @@ class Chat(commands.Cog):
 
             embed.add_field(name='✨ รายการอัปเดต', value='', inline=False)
             embed.add_field(name='๐ SPECIAL EVENT!! Refine Certificate Packager [29 ส.ค. – 12 ก.ย. 2567]',
-                            value='>เพิ่มเติม[Click](https://ro.gnjoy.in.th/special-event-refine-certificate.../)',
+                            value='> เพิ่มเติม[Click](https://ro.gnjoy.in.th/special-event-refine-certificate.../)',
                             inline=False)
             embed.add_field(name='๐ Buying Store Parttime Update',
-                            value='>เพิ่มเติม[Click](https://ro.gnjoy.in.th/buying-store-parttime-update-29.../)',
+                            value='> เพิ่มเติม[Click](https://ro.gnjoy.in.th/buying-store-parttime-update-29.../)',
                             inline=False)
             embed.add_field(name='๐ Monster Balance ปรับสมดุลความยาก-ง่ายของมอนสเตอร์',
-                            value='>เพิ่มเติม[Click](https://ro.gnjoy.in.th/monster-balance-29-aug-2024/)',
+                            value='> เพิ่มเติม[Click](https://ro.gnjoy.in.th/monster-balance-29-aug-2024/)',
                             inline=False)
             embed.add_field(name='๐ รายละเอียดงานแข่งขัน ROS2024 Thailand Championship (รอการอัปเดตเพิ่มเติม)',
-                            value='>เพิ่มเติม[Click](https://ro.gnjoy.in.th/ragnarok-stars-2024-thailand.../)',
+                            value='> เพิ่มเติม[Click](https://ro.gnjoy.in.th/ragnarok-stars-2024-thailand.../)',
                             inline=False) 
         # เว้นระยะห่างหนึ่งบรรทัด
             embed.add_field(name="\n", value="\n", inline=False)
@@ -49,7 +49,7 @@ class Chat(commands.Cog):
                             value='',
                             inline=False)
             embed.add_field(name='๐ แก้ไข Layer ของไอเท็มดังต่อไปนี้ให้ไม่ทับ Costume ประเภทวิกผม',
-                            value='Costume Yin Yang Earring\nCostume Fake Ears\nCostume Wing Ear Black\n',
+                            value='> Costume Yin Yang Earring\nCostume Fake Ears\nCostume Wing Ear Black\n',
                             inline=False)
             
             # เว้นระยะห่างหนึ่งบรรทัด
