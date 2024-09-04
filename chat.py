@@ -108,7 +108,7 @@ class Chat(commands.Cog):
         await self.bot.process_commands(message)
 
         # เงื่อนไขสำหรับข้อความที่ต้องการ
-        if message.content.lower() == 'คาฟ่าเรียกลุงมายด์ให้ที!':
+        if message.content.lower() == 'คาฟ่าเรียกลุงมายด์!':
             # ส่งรูปภาพจาก URL
             image_url = "https://media.discordapp.net/attachments/1173912177585963048/1280029153931821110/NPC_mild.png?ex=66d6978c&is=66d5460c&hm=af088c6f8937b622b77d715dc0382b22f6365af1a68e703fe5b882fe1d8ea35f&=&format=webp&quality=lossless&width=386&height=686"  # ใส่ URL ของรูปภาพที่ต้องการ
             await message.channel.send(image_url)
