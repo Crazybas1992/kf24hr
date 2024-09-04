@@ -10,7 +10,7 @@ intents.message_content = True
 intents.members = True
 intents.guilds = True
 
-GUILD_IDS = [1119100374842884126]
+GUILD_IDS = [258360673648508938]
 
 class kafra(commands.Bot):
     def __init__(self, *args, **kwargs):
