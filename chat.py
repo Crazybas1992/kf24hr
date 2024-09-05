@@ -20,42 +20,53 @@ class Chat(commands.Cog):
         if message.content.lower() == 'คาฟ่าอัพเดท?':
             # Create Embed
             embed = discord.Embed(
-                title='📢 รายการอัปเดต วันที่ 29 สิงหาคม 2567 📢 ',
+                title='📢 รายการอัพเดต วันที่ 5 กันยายน 2567 📢 ',
                 color=0x66FFFF,
-                description='https://ro.gnjoy.in.th/patch-update-29-august-2567/',
+                description='https://ro.gnjoy.in.th/patch-update-5-september-2567/',
                 timestamp=discord.utils.utcnow()
             )
 
             embed.add_field(name='✨ รายการอัปเดต', value='', inline=False)
-            embed.add_field(name='๐ SPECIAL EVENT!! Refine Certificate Packager [29 ส.ค. – 12 ก.ย. 2567]',
-                            value='> เพิ่มเติม[Click](https://ro.gnjoy.in.th/special-event-refine-certificate.../)',
+            embed.add_field(name='๐ Rainbow Scroll[5 - 19 กันยายน 2567]',
+                            value='> ไข่สีรุ้งที่เมื่อเปิดออกจะมีโอกาสได้รับ Durga Ring\t[Click](https://ro.gnjoy.in.th/rainbow-scroll/)',
                             inline=False)
-            embed.add_field(name='๐ Buying Store Parttime Update',
-                            value='> เพิ่มเติม[Click](https://ro.gnjoy.in.th/buying-store-parttime-update-29.../)',
+            embed.add_field(name='๐ Exchange Machine Update!',
+                            value='> เงื่อนไขกิจกรรม Exchange Machine\t[Click](https://ro.gnjoy.in.th/roright/exchange-machine-update/)',
                             inline=False)
-            embed.add_field(name='๐ Monster Balance ปรับสมดุลความยาก-ง่ายของมอนสเตอร์',
-                            value='> เพิ่มเติม[Click](https://ro.gnjoy.in.th/monster-balance-29-aug-2024/)',
+            embed.add_field(name='๐ Ragnarok Stars 2024 Scroll',
+                            value='> ระยะเวลาจำหน่าย : 7 กันยายน 2567\t[Click](https://ro.gnjoy.in.th/ragnarok-stars-2024-scroll/)',
                             inline=False)
-            embed.add_field(name='๐ รายละเอียดงานแข่งขัน ROS2024 Thailand Championship (รอการอัปเดตเพิ่มเติม)',
-                            value='> เพิ่มเติม[Click](https://ro.gnjoy.in.th/ragnarok-stars-2024-thailand.../)',
+            embed.add_field(name='๐ Lapine Costume Update 5 Sep 2024',
+                            value='> เพิ่มเติม\t[Click](https://ro.gnjoy.in.th/lapine-costume-update-5-sep-2024/)',
+                            inline=False)
+            embed.add_field(name='๐ Illusion of Twins',
+                            value='> ภาพลางตาแห่งแฝดเสมือน\t[Click](https://ro.gnjoy.in.th/illusion-of-twins/)',
+                            inline=False) 
+            embed.add_field(name='๐ Illusion of Twins Guide',
+                            value='> Main Quest คำไหว้วานของ Mirko\t[Click](https://ro.gnjoy.in.th/illusion-of-twins-guide/)',
                             inline=False) 
         # เว้นระยะห่างหนึ่งบรรทัด
             embed.add_field(name="\n", value="\n", inline=False)
 
-            embed.add_field(name='✨ รายการเพิ่มเติม',
-                            value='๐ จัดส่ง ROS 2024 Coin',
-                            inline=False)
             embed.add_field(name='✨ รายการแก้ไข',
-                            value='',
-                            inline=False)
-            embed.add_field(name='๐ แก้ไข Layer ของไอเท็มดังต่อไปนี้ให้ไม่ทับ Costume ประเภทวิกผม',
-                            value='> Costume Yin Yang Earring\nCostume Fake Ears\nCostume Wing Ear Black\n',
-                            inline=False)
+                            value=(
+                                '๐ แก้ไขความสามารถของ Ice Crystal Circle\n[Not For Sale] Ice Crystal Circle '
+                                'ให้ทำงานให้ถูกต้อง (เมื่อใช้งานร่วมกับ Time Jewel (Int) Lv.3, '
+                                'ลด Cooldown สกิล Jack Frost 0.5 วินาที)\n'
+                                '๐ แก้ไขบัคเมื่อรับเควส The Sign แล้วเกิดเกม Error ขึ้น\n'
+                                '๐ แก้ไข Dialog ของ NPC Eden Quest Level 170 Yuno Nogg Road 3F ให้ถูกต้อง\n'
+                                '๐ แก้ไข NPC Ding Ding Daily ให้ทำงานให้ถูกต้อง\n'
+                            ),
+                            inline=False
+                        )
             
             # เว้นระยะห่างหนึ่งบรรทัด
             embed.add_field(name="\n", value="\n", inline=False)
 
             embed.add_field(name='✨ Event Now!', value='', inline=False)
+            embed.add_field(name='[5 กันยายน 2567 – 3 ตุลาคม 2567]',
+                            value='Thanksgiving Event [Click](https://ro.gnjoy.in.th/2024-thanksgiving-event/)',
+                            inline=False)
             embed.add_field(name='[22 สิงหาคม 2567 – 28 พฤศจิกายน 2567]',
                             value='ROS2024 Merchant [Click](https://ro.gnjoy.in.th/ragnarok-stars-2024-all-events/)',
                             inline=False)
@@ -72,7 +83,7 @@ class Chat(commands.Cog):
             embed.add_field(name='Instagram : https://www.instagram.com/gravitygametech_official/',
                             value='',
                             inline=False)
-            embed.set_image(url='https://media.discordapp.net/attachments/1173912177585963048/1278562965179731999/457142321_523468060068592_7848779519817662318_n.png?ex=66d1420d&is=66cff08d&hm=9b5451136479c5e9f65bfd619709675601914d4a38dff56e8db31767f0a39fae&=&format=webp&quality=lossless&width=960&height=540')
+            embed.set_image(url='https://media.discordapp.net/attachments/1173912177585963048/1281151652585410580/2024-09-05-RO_PatchUpdate_1920X1080.png?ex=66daacf4&is=66d95b74&hm=3d8ed3e1294d3d364f4168ed1861c4c7776a41b29b320566d8c4ef8b114c48e4&=&format=webp&quality=lossless&width=1100&height=618')
             embed.set_thumbnail(url='https://media.discordapp.net/attachments/1119100375681736878/1275733077590671381/kf2.png?ex=66d0d9c3&is=66cf8843&hm=43609ade7253630841d10874395cf4a7730c03d28118f2751161021a1b4f493e&=&format=webp&quality=lossless&width=686&height=686')
 
             # Send Embed to the channel
