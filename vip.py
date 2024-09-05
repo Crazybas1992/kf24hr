@@ -1,13 +1,10 @@
 import discord
-from discord import Option
-from discord.ext import commands
 import requests
 import csv
 import io
-
-import sys
-sys.path.append('/Users/baslien/Desktop/DiscordBot/kafra-beta')
-from kafra_beta import GUILD_IDS
+from discord import Option
+from discord.ext import commands
+from kafra import GUILD_IDS
 
 # ฟังก์ชันดึงข้อมูลจาก Google Sheets
 async def fetch_google_sheet_data():
