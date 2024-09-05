@@ -6,9 +6,6 @@ from discord import Option
 from discord.ext import commands
 from kafra import GUILD_IDS  # นำเข้า GUILD_IDS จากไฟล์หลัก
 
-# ใช้ GUILD_IDS จาก kafra_beta
-from kafra_beta import GUILD_IDS
-
 # ฟังก์ชันดึงข้อมูลจาก Google Sheets
 async def fetch_google_sheet_data():
     sheet_url = (
