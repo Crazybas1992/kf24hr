@@ -4,7 +4,7 @@ import csv
 import io
 from discord import Option
 from discord.ext import commands
-from kafra import GUILD_IDS
+from kafra import GUILD_IDS  # นำเข้า GUILD_IDS จากไฟล์หลัก
 
 # ฟังก์ชันดึงข้อมูลจาก Google Sheets
 async def fetch_google_sheet_data():
