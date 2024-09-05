@@ -25,10 +25,16 @@ class Vip(commands.Cog):
     def __init__(self, bot):
         self.bot = bot
 
-    @commands.slash_command(guild_ids=GUILD_IDS,
-                             name="vip-check",
-                             description="💳 ตรวจสอบข้อมูล VIP จากกลุ่มซื้อขายโดยระบุ `VIP-00` ตามที่คุณต้องการ")
-    async def vip_check(self, ctx, vip_id: str):
+    @commands.slash_command(
+        guild_ids=GUILD_IDS,
+        name="vip-check",
+        description="💳 ตรวจสอบข้อมูล VIP จากกลุ่มซื้อขายโดยระบุ `VIP-00` ตามที่คุณต้องการ"
+    )
+    async def vip_check(
+        self, 
+        ctx, 
+        vip_id: Option(str, "ระบุรหัส VIP เช่น VIP-01, VIP-02", required=True)
+    ):
         # ดึงข้อมูลจาก Google Sheets
         data = await fetch_google_sheet_data()
         if data is None:
