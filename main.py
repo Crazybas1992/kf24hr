@@ -218,6 +218,9 @@ class main(commands.Cog):
     @commands.slash_command(guild_ids=GUILD_IDS,
                             description="🗓 ข้อมูลเพิ่มเติมของกิจกรรมต่างๆ ณ เวลานี้")
     async def กิจกรรม(self, ctx):
+        # Defer the response to avoid timing out
+        await ctx.defer(ephemeral=True)
+
         now = datetime.now()
         embed = discord.Embed(
             title="🗓 __**กิจกรรมทั้งหมด ณ เวลานี้**__ 🗓\n",
@@ -228,6 +231,15 @@ class main(commands.Cog):
         embed.add_field(name="\n", value="\n", inline=False)
 
         # กิจกรรม Cat Hand Gift Packager
+        self.add_event(embed, 
+                    "✨ Thanksgiving Event ✨",
+                    "⏰ [5 กันยายน 2567 - 3 ตุลาคม 2567]\t[Click](https://ro.gnjoy.in.th/2024-thanksgiving-event/)",
+                    datetime(2024, 10, 3),
+                    now)
+
+        # เว้นระยะห่างหนึ่งบรรทัด
+        embed.add_field(name="\n", value="\n", inline=False)
+
         self.add_event(embed, 
                     "✨ Cat Hand Gift Packager ✨",
                     "⏰ [29 สิงหาคม 2567 - 12 กันยายน 2567]\t[Click](https://ro.gnjoy.in.th/special-event-refine-certificate-packager/)",
@@ -267,6 +279,7 @@ class main(commands.Cog):
             description = f"```กิจกรรมนี้ได้สิ้นสุดลงแล้วเมื่อวันที่ {end_date.strftime('%d %B %Y')}```"
         
         embed.add_field(name=title, value=description, inline=False)
+        
 # ===================================================================================== #
 
 def setup(bot):
