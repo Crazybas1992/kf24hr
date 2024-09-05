@@ -4,7 +4,7 @@ from discord.ext import commands
 from discord import Embed
 from discord.commands import slash_command, Option
 from datetime import datetime, timedelta
-from kafra import GUILD_IDS  # นำเข้าตัวแปร GUILD_IDS จาก kafra.py
+from kafra import GUILD_IDS
 
 
 # ================================================================================= #
