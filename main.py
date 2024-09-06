@@ -40,14 +40,21 @@ class main(commands.Cog):
                 'description': 'Abyss Chaser คลาสขั้นสูงของ Shadow Chaser มีความสามารถในการใช้พลังของห้วงลึกเพื่อทำการโจมตีต่างๆ...',
                 'link': 'https://sigmathefallen.blogspot.com/2024/07/abyss-chaser-2nd-version.html',
                 'thumbnail': 'https://media.discordapp.net/attachments/1173912177585963048/1276923227179974687/image.png',
-                'image': 'https://media.discordapp.net/attachments/1173912177585963048/1280017264510500894/image.png?ex=66d68c79&is=66d53af9&hm=7b21f4c2d5c4603ed0c64150b2ac8705fcc7cc7b3f03fc8c1d10775112162492&=&format=webp&quality=lossless&width=690&height=686'
+                'image': 'https://media.discordapp.net/attachments/1173912177585963048/1281453642125410455/E0B8A3E0B8B9E0B89B20Abyss20Chaser1.png?ex=66dbc634&is=66da74b4&hm=336ca762ec7bb48ca4e63859b004d856ff2d1ca2c635f434a3491637d05d7e42&=&format=webp&quality=lossless&width=1606&height=1138'
+            },
+            'Arch Mage': {
+                'title': 'Arch Mage',
+                'description': 'Arch Mage คือคลาสที่พัฒนาขึ้นจาก Warlock ซึ่งนำเสนอมายากลสุดพิเศษที่ผสมผสานความสวยงามเข้ากับพลังเวทมนตร์ที่ทรงพลัง คุณสามารถสร้างทั้งทุ่งดอกไม้เพลิง หรือสายฝนผลึกน้ำแข็งอันบริสุทธิ์ เมื่อถึงช่วง Climax เหล่านักเวทย์สามารถร่ายเวทที่ทรงพลังยิ่งขึ้นได้',
+                'link': 'https://sigmathefallen.blogspot.com/search?q=Arch+Mage',
+                'thumbnail': 'https://media.discordapp.net/attachments/1173912177585963048/1281458349258309673/Arch_Mage.png?ex=66dbca96&is=66da7916&hm=66fe9b19a2c870e16eb526962d42d328789f0dca706c06afcfdf1812c6fc2c55&=&format=webp&quality=lossless&width=202&height=204',
+                'image': 'https://media.discordapp.net/attachments/1173912177585963048/1281458095637266502/E0B8A3E0B8B9E0B89B20Arch20Mage1.png?ex=66dbca5a&is=66da78da&hm=74a6246ee26114d744a0d5734ca098f7cde4a018b86c83e546ebf588f4b14fc8&=&format=webp&quality=lossless&width=1608&height=1138'
             },
             'Biolo': {
                 'title': 'Biolo',
                 'description': 'Biolo คลาสขั้นสูงของ Geneticist เป็นผู้เชี่ยวชาญด้านเทคโนโลยีชีวภาพ...',
                 'link': 'https://sigmathefallen.blogspot.com/2024/07/biolo-2nd-version.html',
                 'thumbnail': 'https://media.discordapp.net/attachments/1173912177585963048/1276925153170690112/image.png',
-                'image': 'https://example.com/biolo_image.png'
+                'image': 'https://images-ext-1.discordapp.net/external/pxmyG-5GlMlitYvhLudATUHJZDpOBXr21VbzoV83QKQ/https/www.realro.net/home/ckfinder/userfiles/images/%28%25E0%25B8%25A3%25E0%25B8%25B9%25E0%25B8%259B%29%2520Biolo%282%29.png?format=webp&quality=lossless&width=1842&height=1138'
             },
             'Cardinal': {
                 'title': 'Cardinal',
@@ -61,56 +68,56 @@ class main(commands.Cog):
                 'description': 'Dragon Knights เป็นการวิวัฒนาการขั้นสุดท้ายของคลาส Rune Knight ชื่อของพวกเขามักจะย่อและเรียกว่า DK พวกเขาได้แลกเปลี่ยนมังกรที่ใช้เป็นพาหนะสำหรับมังกรที่มีอายุมากขึ้น และพร้อมที่จะสร้างความเสียหายอย่างรุนแรงด้วยอาวุธใหม่ที่ทรงพลัง ขณะเดียวกันก็มีค่าพลังชีวิต (HP) สูงที่สุดเมื่อเปรียบเทียบกับคลาสอื่นๆ',
                 'link': 'https://sigmathefallen.blogspot.com/2024/08/dragon-knight-2nd-version.html',
                 'thumbnail': 'https://media.discordapp.net/attachments/1173912177585963048/1276925153170690112/image.png',
-                'image': 'https://example.com/dragonknight_image.png'
+                'image': 'https://media.discordapp.net/attachments/1173912177585963048/1281454234281316453/E0B8A3E0B8B9E0B89B20Dragon20Knight2.png?ex=66dbc6c1&is=66da7541&hm=0ad11be3b4f0beca1c292de179d0d69cb87fdd4070d01df9529c6a5f1cae52df&=&format=webp&quality=lossless&width=1960&height=1100'
             },
             'Elemental Master': {
                 'title': 'Elemental Master',
                 'description': 'Elemental Master เป็นคลาสที่สี่ของ Sorcerer เชี่ยวชาญในการควบคุมธาตุธรรมชาติ คุณสามารถเรียกวิญญาณที่มีความสามารถขั้นสูงและพันธมิตรสนับสนุนด้วยเวทมนตร์ต่างๆ',
                 'link': 'https://sigmathefallen.blogspot.com/2024/07/elemental-master-2nd-version.html',
                 'thumbnail': 'https://media.discordapp.net/attachments/1173912177585963048/1276925153170690112/image.png',
-                'image': 'https://example.com/elementalmaster_image.png'
+                'image': 'https://media.discordapp.net/attachments/1173912177585963048/1281454401143439380/E0B8A3E0B8B9E0B89B20Elemental20Master1.png?ex=66dbc6e9&is=66da7569&hm=d7ac1a17a824729e0c08a21f2bc7af7e5ce536ece83bcf9a9448198c5ec447aa&=&format=webp&quality=lossless&width=1328&height=1138'
             },
             'Imperial Guard': {
                 'title': 'Imperial Guard',
                 'description': 'Imperial Guards เป็นคลาสที่สี่ของ Royal Guard\nความเชื่อที่ไม่สามารถเคลื่อนไหวของ Imperial Guard ได้มอบพลังที่แท้จริงให้กับพวกเขา นี่คืออาชีพที่มุ่งมั่นในการปกป้องพันธมิตรแทนการทำลาย พวกเขาถูกติดตั้งด้วยดาบและโล่ รวมถึงการโจมตีศักดิ์สิทธิ์ที่ทรงพลัง',
                 'link': 'https://sigmathefallen.blogspot.com/2024/08/imperial-guard-2nd-version.html',
                 'thumbnail': 'https://example.com/imperialguard_thumbnail.png',
-                'image': 'https://media.discordapp.net/attachments/1173912177585963048/1276925153170690112/image.png'
+                'image': 'https://media.discordapp.net/attachments/1173912177585963048/1281454608291598398/E0B8A3E0B8B9E0B89B20Imperial20Guard1.png?ex=66dbc71a&is=66da759a&hm=dc1ec75b0eecda467e8ae97c734d827383f1c6e1cccba4e226403c14a3841ef3&=&format=webp&quality=lossless&width=2152&height=1138'
             },
             'Inquisitor': {
                 'title': 'Inquisitor',
                 'description': 'Inquisitor คลาสที่พัฒนาขึ้นสำหรับ Sura เป็นตัวแทนของการตัดสินของพระเจ้า ด้วยความเชื่อที่มั่นคง พวกเขาสามารถปลดปล่อยการตัดสินของพระเจ้าต่อผู้ที่กระทำความชั่วได้',
                 'link': 'https://sigmathefallen.blogspot.com/2024/08/inquisitor-2nd-version.html',
                 'thumbnail': 'https://media.discordapp.net/attachments/1173912177585963048/1276925153170690112/image.png',
-                'image': 'https://example.com/inquisitor_image.png'
+                'image': 'https://media.discordapp.net/attachments/1173912177585963048/1281454833500426250/E0B8A3E0B8B9E0B89B20Inquisitor1.png?ex=66dbc750&is=66da75d0&hm=3f54b5df08fb9b25c7a5f7473f37290b648bf2941397613b253e547f14b58d1d&=&format=webp&quality=lossless&width=1100&height=660'
             },
-            'Troubadour': {
-                'title': 'Troubadour',
-                'description': 'Troubadour คลาสที่พัฒนาขึ้นสำหรับ Maestro เล่นเพลงที่สวยงามเพื่อเพิ่มขวัญและกำลังใจให้กับพันธมิตร นี่คืออาชีพที่เปลี่ยนทิศทางของการต่อสู้บนสนามรบผ่านเสียงเพลงและดนตรี',
-                'link': 'https://sigmathefallen.blogspot.com/2024/06/troubadour-trouvere-2nd-version.html',
-                'thumbnail': 'https://example.com/troubadour_thumbnail.png',
-                'image': 'https://media.discordapp.net/attachments/1173912177585963048/1276925153170690112/image.png'
-            },
-            'Trouvere': {
-                'title': 'Trouvere',
-                'description': 'Trouvere คลาสที่พัฒนาขึ้นสำหรับ Wanderer เต้นรำที่ดึงดูดใจเพื่อเพิ่มขวัญและกำลังใจให้กับพันธมิตร นี่คืออาชีพที่เปลี่ยนทิศทางของการต่อสู้บนสนามรบผ่านเพลงและการเต้น',
-                'link': 'https://sigmathefallen.blogspot.com/2024/06/troubadour-trouvere-2nd-version.html',
-                'thumbnail': 'https://media.discordapp.net/attachments/1173912177585963048/1276925153170690112/image.png',
-                'image': 'https://example.com/trouvere_image.png'
-            },
-            'Windhawk': {
-                'title': 'Wind Hawk คลาสที่พัฒนาขึ้นสำหรับ Ranger สามารถใช้พลังของลมได้อย่างเต็มที่ ด้วยทักษะในการยิงลูกศรลมที่ทรงพลัง พวกเขายังสามารถสื่อสารกับสัตว์ป่า ทำให้สามารถใช้ Warg และ Falcon ร่วมกันได้',
-                'description': 'นักยิงธนูผู้ว่องไว...',
-                'link': 'https://sigmathefallen.blogspot.com/2024/07/windhawk-2nd-version.html',
-                'thumbnail': 'https://media.discordapp.net/attachments/1173912177585963048/1276925153170690112/image.png',
-                'image': 'https://example.com/windhawk_image.png'
+            'Meister': {
+                'title': 'Meister',
+                'description': 'Meister เป็นคลาสที่พัฒนาจาก Mechanic โดดเด่นด้านวิศวกรรมกล สามารถเรียกหุ่นยนต์ Auto Battle มาช่วยต่อสู้และเสริมพลังให้พันธมิตรด้วยอุปกรณ์ต่างๆ',
+                'link': 'https://sigmathefallen.blogspot.com/search?q=Meister',
+                'thumbnail': 'https://media.discordapp.net/attachments/1173912177585963048/1281459869890646016/image.png?ex=66dbcc01&is=66da7a81&hm=170bbe388cd9c052f84a4cd694fb21fb56e71b03fcd3805ccead57585cf030ad&=&format=webp&quality=lossless&width=206&height=210',
+                'image': 'https://media.discordapp.net/attachments/1173912177585963048/1281460072182054922/E0B8A3E0B8B9E0B89B20Meister1.png?ex=66dbcc31&is=66da7ab1&hm=dc5ffc6842e0c304e1efaa2d79c25f06f218a41d2428cf2e28307b45482363a5&=&format=webp&quality=lossless&width=1100&height=654'
             },
             'Shadow Cross': {
                 'title': 'Shadow Cross',
                 'description': 'Shadow Cross เป็นคลาสงานที่สี่ของ Assassin/Assassin Cross/Guillotine Cross สำหรับโจมตีศัตรู พวกเขายังคงใช้อาวุธสองชิ้นแยกกัน (จากมีดไปจนถึงดาบมือเดียว) หรือ Katars แต่พวกเขาจะได้รับความสามารถใหม่ชื่อของ Shadow Cross มักจะถูกย่อและย่อเป็น SX ซึ่ง X เหมือนกับสัญลักษณ์กากบาท',
                 'link': 'https://sigmathefallen.blogspot.com/2024/07/windhawk-2nd-version.html',
                 'thumbnail': 'https://media.discordapp.net/attachments/1173912177585963048/1276925153170690112/image.png',
-                'image': 'https://example.com/shadowcross_image.png'
+                'image': 'https://media.discordapp.net/attachments/1173912177585963048/1281456865036730419/E0B8A3E0B8B9E0B89B20Shadow20Cross1.png?ex=66dbc934&is=66da77b4&hm=ee83f266d7676790546bcf4d52a287ec3681d10fc73cfc4e4467122fe49c222f&=&format=webp&quality=lossless&width=1528&height=1138'
+            },
+            'Troubadour & Trouvere': {
+                'title': 'Troubadour & Trouvere',
+                'description': 'Troubadour เป็นคลาสที่พัฒนามาจาก Maestro ใช้เสียงเพลงเพื่อเพิ่มขวัญและกำลังใจให้กับพันธมิตร พลิกสถานการณ์การต่อสู้ผ่านดนตรี และ Trouvere เป็นคลาสที่พัฒนามาจาก Wanderer ใช้การเต้นรำเพื่อเพิ่มขวัญและกำลังใจให้กับพันธมิตร เปลี่ยนทิศทางการต่อสู้ด้วยเพลงและการเต้น',
+                'link': 'https://sigmathefallen.blogspot.com/2024/06/troubadour-trouvere-2nd-version.html',
+                'thumbnail': 'https://example.com/troubadour_thumbnail.png',
+                'image': 'https://media.discordapp.net/attachments/1173912177585963048/1281456367756116038/E0B8A3E0B8B9E0B89B20Troubadour202620Trouvere1.png?ex=66dbc8be&is=66da773e&hm=af5ee95e4880cb9daa06cbe3146ee1913ae5930c70941c3b4b4f340bd9b804de&=&format=webp&quality=lossless&width=1970&height=1138'
+            },
+            'Windhawk': {
+                'title': 'Wind Hawk คลาสที่พัฒนาขึ้นสำหรับ Ranger สามารถใช้พลังของลมได้อย่างเต็มที่ ด้วยทักษะในการยิงลูกศรลมที่ทรงพลัง พวกเขายังสามารถสื่อสารกับสัตว์ป่า ทำให้สามารถใช้ Warg และ Falcon ร่วมกันได้',
+                'description': 'นักยิงธนูผู้ว่องไว...',
+                'link': 'https://sigmathefallen.blogspot.com/2024/07/windhawk-2nd-version.html',
+                'thumbnail': 'https://media.discordapp.net/attachments/1173912177585963048/1276925153170690112/image.png',
+                'image': 'https://media.discordapp.net/attachments/1173912177585963048/1281456711772930180/E0B8A3E0B8B9E0B89B20Wind20Hawk1.png?ex=66dbc910&is=66da7790&hm=bfc3a95b8cb21c1bf928451e7824dc894d248022e9633f0c79b33495d7946da4&=&format=webp&quality=lossless&width=2152&height=1138'
             }
         }
 
@@ -118,7 +125,7 @@ class main(commands.Cog):
             class_info = classes_data[class4]
             embed = discord.Embed(
                 title=class_info['title'],
-                description=f"```{class_info['description']}```\nรายละเอียดเพิ่มเติม [คลิก]({class_info['link']})",
+                description=f"`{class_info['description']}`\nรายละเอียดเพิ่มเติม [คลิก]({class_info['link']})",
                 color=discord.Color.green()
             )
             embed.set_thumbnail(url=class_info['thumbnail'])
