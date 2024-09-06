@@ -22,8 +22,8 @@ class main(commands.Cog):
         description="🗡 ข้อมูลเพิ่มเติมเกี่ยวกับคลาสสี่ที่อัพเดท ณ เวลานี้!"
     )
     async def อาชีพคลาสสี่(self, ctx, class4: Option(str, '⚔️กรุณาเลือกอาชีพ', choices=[
-        'Abyss Chaser', 'Biolo', 'Cardinal', 'Dragon Knight', 'Elemental Master', 
-        'Imperial Guard', 'Inquisitor', 'Troubadour', 'Trouvere', 'Windhawk', 'Shadow Cross'
+        'Abyss Chaser', 'Arch Mage', 'Biolo', 'Cardinal', 'Dragon Knight', 'Elemental Master', 
+        'Imperial Guard', 'Inquisitor', 'Meister', 'Troubadour & Trouvere', 'Windhawk', 'Shadow Cross'
     ])):
         await ctx.defer(ephemeral=True)  # ใช้ defer เพื่อยืดเวลาในการประมวลผล
         embed = self.create_embed_for_class(class4)
