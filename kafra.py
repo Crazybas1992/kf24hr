@@ -2,6 +2,7 @@
 import discord
 import os
 from discord.ext import commands
+from myserver import server_on
 
 # กำหนด Intents
 intents = discord.Intents.default()
@@ -19,7 +20,7 @@ class Kafra(commands.Bot):
 
     async def on_ready(self):
         print(f'{self.user} is Ready')
-        # Sync commands with Discord
+        # Sync คำสั่งกับ Discord
         synced = await self.tree.sync(guild=discord.Object(id=GUILD_IDS[0]))
         print(f'Synced {len(synced)} commands.')
 
@@ -29,7 +30,8 @@ bot = Kafra(owner_id=258557300183138304, case_insensitive=True, shard_count=NUM_
 if __name__ == "__main__":
     # โหลด Cogs จากโฟลเดอร์ cogs (สมมุติว่าทั้งหมดอยู่ในที่เดียวกับไฟล์หลัก)
     for file in os.listdir('.'):
-        if file.endswith('.py') and file not in ['kafra.py']:
+        if file.endswith('.py') and file not in ['kafra.py', 'myserver.py']:  # ข้ามไฟล์ myserver.py
             bot.load_extension(f'{file[:-3]}')
 
-    bot.run(os.getenv('TOKEN'))  # ใช้ token จาก environment variable
+    server_on()  # เรียกใช้งาน server_on เพื่อรันเซิร์ฟเวอร์
+    bot.run(bot.token)  # เรียกใช้งานบอทด้วย Token จาก Environment Variable
