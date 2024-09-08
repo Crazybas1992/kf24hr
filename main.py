@@ -6,7 +6,6 @@ from discord.commands import slash_command, Option
 from datetime import datetime, timedelta
 from kafra import GUILD_IDS
 
-
 # ================================================================================= #
 
 class main(commands.Cog):
