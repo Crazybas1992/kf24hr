@@ -15,7 +15,7 @@ with open('config/config.json') as config:
     data = json.load(config)
 
 # กำหนดตัวแปร GUILD_IDS และจำนวน shards
-GUILD_IDS = [1119100374842884126]
+GUILD_IDS = [258360673648508938]
 NUM_SHARDS = 2  # เปลี่ยนตามจำนวน shards ที่คุณต้องการ
 
 def get_shard_id(guild_id):
@@ -24,7 +24,7 @@ def get_shard_id(guild_id):
     """
     return (guild_id >> 22) % NUM_SHARDS
 
-class KafraBeta(commands.Bot):
+class Kafra(commands.Bot):
     def __init__(self, *args, **kwargs):
         self.token = data["token"]
         super().__init__(command_prefix='!', intents=intents, *args, **kwargs)
@@ -33,7 +33,7 @@ class KafraBeta(commands.Bot):
         print(f'{self.user} is Ready')
 
 # สร้างอินสแตนซ์ของบอทพร้อมกับการตั้งค่า shard_count
-bot = KafraBeta(owner_id=1280916207884832899, case_insensitive=True, shard_count=NUM_SHARDS)
+bot = Kafra(owner_id=1280916207884832899, case_insensitive=True, shard_count=NUM_SHARDS)
 
 if __name__ == "__main__":
     # โหลด Cogs จากโฟลเดอร์ cogs
