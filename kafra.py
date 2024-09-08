@@ -10,13 +10,6 @@ intents.message_content = True
 intents.members = True
 intents.guilds = True  # จำเป็นสำหรับคำสั่ง slash
 
-# โหลดข้อมูลจาก config
-config_path = 'config/config.json'
-if not os.path.isfile(config_path):
-    raise FileNotFoundError(f"Configuration file '{config_path}' not found")
-
-with open(config_path) as config:
-    data = json.load(config)
 
 # กำหนดตัวแปร GUILD_IDS และจำนวน shards
 GUILD_IDS = [258360673648508938]
