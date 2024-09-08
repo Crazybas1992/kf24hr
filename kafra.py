@@ -34,4 +34,4 @@ if __name__ == "__main__":
             bot.load_extension(f'{file[:-3]}')
 
     server_on()  # เรียกใช้งาน server_on เพื่อรันเซิร์ฟเวอร์
-    bot.run(bot.token)  # เรียกใช้งานบอทด้วย Token จาก Environment Variable
+    bot.run(os.getenv('TOKEN'))  # เรียกใช้งานบอทด้วย Token จาก Environment Variable
