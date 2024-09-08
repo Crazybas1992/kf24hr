@@ -4,14 +4,14 @@ import os
 from discord.ext import commands
 from myserver import server_on
 
-# กำหนด Intents
+# ตั้งค่า Intents
 intents = discord.Intents.default()
 intents.message_content = True
 intents.members = True
 intents.guilds = True
 
 # กำหนด GUILD_IDS
-GUILD_IDS = [258360673648508938]
+GUILD_IDS = [258360673648508938]  # เพิ่ม guild id ของคุณ
 
 class Kafra(commands.Bot):
     def __init__(self, *args, **kwargs):
@@ -20,24 +20,24 @@ class Kafra(commands.Bot):
 
     async def on_ready(self):
         print(f'{self.user} is Ready')
-        # ลงทะเบียนคำสั่ง Slash กับ guild ที่กำหนด
+
+        # ลองใช้การ sync คำสั่ง Slash เฉพาะเมื่อจำเป็น
         try:
-            await self.tree.sync(guild=discord.Object(id=GUILD_IDS[0]))
-            print(f'Successfully synced commands for guild ID {GUILD_IDS[0]}')
-        except Exception as e:
+            synced = await self.tree.sync(guild=discord.Object(id=GUILD_IDS[0]))
+            print(f'Successfully synced commands for guild ID {GUILD_IDS[0]}, {len(synced)} commands synced.')
+        except discord.HTTPException as e:
             print(f'Failed to sync commands: {e}')
 
-# ==================== Create Bot Instance ====================
-
+# สร้าง Instance ของ Bot
 bot = Kafra(owner_id=258557300183138304, case_insensitive=True)
 
-# ==================== Load Cogs ====================
+# โหลด Cogs
 if __name__ == "__main__":
-    server_on()  # Call server_on before running the bot
-    
-    # โหลด Cog ทั้งหมดจากโฟลเดอร์หลัก (ไม่ใช่โฟลเดอร์ย่อย cogs)
-    for file in os.listdir('.'):  # ใช้โฟลเดอร์หลัก
-        if file.endswith('.py') and file not in ['kafra.py', 'myserver.py']:  # ข้ามไฟล์หลักและไฟล์ server_on
+    server_on()  # เรียกใช้งาน server_on
+
+    # โหลด Cog จากไฟล์ในโฟลเดอร์หลัก ยกเว้นไฟล์หลักและไฟล์ server_on
+    for file in os.listdir('.'):
+        if file.endswith('.py') and file not in ['main.py', 'myserver.py']:
             try:
                 bot.load_extension(file[:-3])  # โหลด Cog โดยใช้ชื่อไฟล์ (ตัด .py ออก)
                 print(f'Successfully loaded {file}')
