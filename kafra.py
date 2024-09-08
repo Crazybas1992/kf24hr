@@ -4,45 +4,42 @@ import os
 from discord.ext import commands
 from myserver import server_on
 
-# ตั้งค่า Intents
+# กำหนด Intents
 intents = discord.Intents.default()
 intents.message_content = True
 intents.members = True
-intents.guilds = True
+intents.guilds = True  # จำเป็นสำหรับคำสั่ง slash
 
-# กำหนด GUILD_IDS
-GUILD_IDS = [258360673648508938]  # เพิ่ม guild id ของคุณ
+# โหลดข้อมูลจาก config
+with open('config/config.json') as config:
+    data = json.load(config)
 
-class Kafra(commands.Bot):
+# กำหนดตัวแปร GUILD_IDS และจำนวน shards
+GUILD_IDS = [1119100374842884126]
+NUM_SHARDS = 2  # เปลี่ยนตามจำนวน shards ที่คุณต้องการ
+
+def get_shard_id(guild_id):
+    """
+    ฟังก์ชันในการคำนวณ shard_id สำหรับ guild_id
+    """
+    return (guild_id >> 22) % NUM_SHARDS
+
+class KafraBeta(commands.Bot):
     def __init__(self, *args, **kwargs):
-        self.token = os.getenv("TOKEN")
+        self.token = data["token"]
         super().__init__(command_prefix='!', intents=intents, *args, **kwargs)
 
     async def on_ready(self):
         print(f'{self.user} is Ready')
 
-        # ลองใช้การ sync คำสั่ง Slash เฉพาะเมื่อจำเป็น
-        try:
-            synced = await self.tree.sync(guild=discord.Object(id=GUILD_IDS[0]))
-            print(f'Successfully synced commands for guild ID {GUILD_IDS[0]}, {len(synced)} commands synced.')
-        except discord.HTTPException as e:
-            print(f'Failed to sync commands: {e}')
+# สร้างอินสแตนซ์ของบอทพร้อมกับการตั้งค่า shard_count
+bot = KafraBeta(owner_id=1280916207884832899, case_insensitive=True, shard_count=NUM_SHARDS)
 
-# สร้าง Instance ของ Bot
-bot = Kafra(owner_id=258557300183138304, case_insensitive=True)
-
-# โหลด Cogs
 if __name__ == "__main__":
-    server_on()  # เรียกใช้งาน server_on
-
-    # โหลด Cog จากไฟล์ในโฟลเดอร์หลัก ยกเว้นไฟล์หลักและไฟล์ server_on
-    for file in os.listdir('.'):
-        if file.endswith('.py') and file not in ['main.py', 'myserver.py']:
-            try:
-                bot.load_extension(file[:-3])  # โหลด Cog โดยใช้ชื่อไฟล์ (ตัด .py ออก)
-                print(f'Successfully loaded {file}')
-            except Exception as e:
-                print(f'Failed to load {file}: {e}')
+    # โหลด Cogs จากโฟลเดอร์ cogs
+    for file in os.listdir('./cogs'):
+        if file.endswith('.py'):
+            bot.load_extension(f'cogs.{file[:-3]}')
 
     server_on()
     bot.run(os.getenv('TOKEN'))
