@@ -247,10 +247,16 @@ class main(commands.Cog):
         # ตัวอย่างข้อมูลรางวัล (ควรดึงข้อมูลจริงจากฐานข้อมูลหรือ API)
         rewards = [
             {
+                "name": "🎁 Item Code: ROS 2024 Coin จำนวน 50 เหรียญ",
+                "description": "```BD06-2F8C-4DE6-A3EA```",
+                "start_date": datetime(2024, 9, 9),
+                "end_date": datetime(2024, 9, 12),
+            },
+            {
                 "name": "🎁 Item Code: ROS 2024 Coin จำนวน 100 เหรียญ",
-                "description": "```6EE9-54C9-44BF-9555```",
-                "start_date": datetime(2024, 8, 29),
-                "end_date": datetime(2024, 9, 5),
+                "description": "```1112-3C73-4491-AF94```",
+                "start_date": datetime(2024, 9, 9),
+                "end_date": datetime(2024, 9, 12),
             },
         ]
 
