@@ -2,7 +2,7 @@ import discord
 from discord.ext import commands, tasks
 import asyncio
 from datetime import datetime, timedelta
-from kafra_beta import GUILD_IDS
+from kafra import GUILD_IDS
 
 class DailyAnnouncement(commands.Cog):
     def __init__(self, bot):
