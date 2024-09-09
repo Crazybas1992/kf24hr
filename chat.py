@@ -110,7 +110,7 @@ class Chat(commands.Cog):
             fortune_percent = random.randint(1, 100)
             lucky_place = random.choice(['Prontera', 'Payon', 'Geffen', 'Morroc', 'Izlude', 'Alberta', 'Juno', 'Aldebaran', 'Lutie', 'Amatsu', 'Kunlun', 'Nifflheim', 'Rachel', 'Valhalla'])
 
-            response = (f"ดวงของคุณ {message.author.display_name} วันนี้อยู่ที่ระดับ {fortune_percent}% "
+            response = (f"ดวงของคุณ {message.author.mention} วันนี้อยู่ที่ระดับ {fortune_percent}% "
                         f"สถานที่ให้โชคของคุณก็คือ {lucky_place}")
 
             await message.channel.send(response)
