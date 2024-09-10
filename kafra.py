@@ -1,9 +1,9 @@
 # ==================== Import Statements ====================
 import discord
 import os
-from discord import app_commands
 from discord.ext import commands
 from myserver import server_on
+from discord import app_commands
 
 # กำหนด Intents
 intents = discord.Intents.default()
