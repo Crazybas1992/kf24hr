@@ -18,6 +18,7 @@ NUM_SHARDS = 2  # เปลี่ยนตามจำนวน shards ที่
 class Kafra(commands.Bot):
     def __init__(self, *args, **kwargs):
         super().__init__(command_prefix='!', intents=intents, *args, **kwargs)
+        self.tree = app_commands.CommandTree(self)  # เพิ่มบรรทัดนี้เพื่อใช้ app_commands
 
     async def on_ready(self):
         print(f'{self.user} is Ready')
