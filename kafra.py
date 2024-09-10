@@ -3,7 +3,6 @@ import discord
 import os
 from discord.ext import commands
 from myserver import server_on
-from discord import app_commands
 
 # กำหนด Intents
 intents = discord.Intents.default()
@@ -18,13 +17,9 @@ NUM_SHARDS = 2  # เปลี่ยนตามจำนวน shards ที่
 class Kafra(commands.Bot):
     def __init__(self, *args, **kwargs):
         super().__init__(command_prefix='!', intents=intents, *args, **kwargs)
-        self.tree = app_commands.CommandTree(self)  # เพิ่มบรรทัดนี้เพื่อใช้ app_commands
 
     async def on_ready(self):
         print(f'{self.user} is Ready')
-        # Sync คำสั่งกับ Discord
-        synced = await self.tree.sync(guild=discord.Object(id=GUILD_IDS[0]))
-        print(f'Synced {len(synced)} commands.')
 
 # สร้างอินสแตนซ์ของบอทพร้อมกับการตั้งค่า shard_count
 bot = Kafra(owner_id=258557300183138304, case_insensitive=True, shard_count=NUM_SHARDS)
