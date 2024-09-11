@@ -13,7 +13,7 @@ class DailyAnnouncement(commands.Cog):
     async def daily_announcement(self):
         now = datetime.now()
         # ตั้งเวลาเป้าหมายที่ต้องการให้ประกาศ เช่น 06:00 น.
-        target_time = now.replace(hour=6, minute=0, second=0, microsecond=0)
+        target_time = now.replace(hour=12, minute=0, second=0, microsecond=0)
         if now >= target_time:
             target_time += timedelta(days=1)  # หากเวลาปัจจุบันผ่านเวลาเป้าหมาย ให้เลื่อนไปอีกวันหนึ่ง
 
