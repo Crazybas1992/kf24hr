@@ -20,42 +20,40 @@ class Chat(commands.Cog):
         if message.content.lower() == 'คาฟ่าอัพเดท?':
             # Create Embed
             embed = discord.Embed(
-                title='📢 รายการอัพเดต วันที่ 5 กันยายน 2567 📢 ',
+                title='📢 รายการอัปเดต วันที่ 12 กันยายน 2567 📢',
                 color=0x66FFFF,
-                description='https://ro.gnjoy.in.th/patch-update-5-september-2567/',
+                description='https://ro.gnjoy.in.th/patch-update-12-sep-2567/',
                 timestamp=discord.utils.utcnow()
             )
 
             embed.add_field(name='✨ รายการอัปเดต', value='', inline=False)
-            embed.add_field(name='๐ Rainbow Scroll[5 - 19 กันยายน 2567]',
-                            value='> ไข่สีรุ้งที่เมื่อเปิดออกจะมีโอกาสได้รับ Durga Ring\t[Click](https://ro.gnjoy.in.th/rainbow-scroll/)',
+            embed.add_field(name='๐ Spend Promotion September 2024',
+                            value='> สามารถดูรายละเอียดเพิ่มเติมได้[ที่นี่](https://ro.gnjoy.in.th/spend-promotion-september-2024/)',
                             inline=False)
-            embed.add_field(name='๐ Exchange Machine Update!',
-                            value='> เงื่อนไขกิจกรรม Exchange Machine\t[Click](https://ro.gnjoy.in.th/roright/exchange-machine-update/)',
+            embed.add_field(name='๐ Malangdo Costume Limited 7Days!',
+                            value='> สามารถดูรายละเอียดเพิ่มเติมได้[ที่นี่](https://ro.gnjoy.in.th/malangdo-costume-limited-7days-12.../)',
                             inline=False)
-            embed.add_field(name='๐ Ragnarok Stars 2024 Scroll',
-                            value='> ระยะเวลาจำหน่าย : 7 กันยายน 2567\t[Click](https://ro.gnjoy.in.th/ragnarok-stars-2024-scroll/)',
+            embed.add_field(name='๐ Pre Event Class 4',
+                            value='> สามารถดูรายละเอียดเพิ่มเติมได้[ที่นี่](https://ro.gnjoy.in.th/pre-class-4-event/)',
                             inline=False)
-            embed.add_field(name='๐ Lapine Costume Update 5 Sep 2024',
-                            value='> เพิ่มเติม\t[Click](https://ro.gnjoy.in.th/lapine-costume-update-5-sep-2024/)',
+            embed.add_field(name='๐ Update Costume Enchant Stone Box 23',
+                            value='> สามารถดูรายละเอียดเพิ่มเติมได้[ที่นี่](https://ro.gnjoy.in.th/update-enchant-stone-box-23-12.../)',
                             inline=False)
-            embed.add_field(name='๐ Illusion of Twins',
-                            value='> ภาพลางตาแห่งแฝดเสมือน\t[Click](https://ro.gnjoy.in.th/illusion-of-twins/)',
-                            inline=False) 
-            embed.add_field(name='๐ Illusion of Twins Guide',
-                            value='> Main Quest คำไหว้วานของ Mirko\t[Click](https://ro.gnjoy.in.th/illusion-of-twins-guide/)',
-                            inline=False) 
+            embed.add_field(name='๐ Map Drop System',
+                            value='> สามารถดูรายละเอียดเพิ่มเติมได้[ที่นี่](https://ro.gnjoy.in.th/map-drop-system/)',
+                            inline=False)
         # เว้นระยะห่างหนึ่งบรรทัด
             embed.add_field(name="\n", value="\n", inline=False)
 
             embed.add_field(name='✨ รายการแก้ไข',
                             value=(
-                                '๐ แก้ไขความสามารถของ Ice Crystal Circle\n[Not For Sale] Ice Crystal Circle '
-                                'ให้ทำงานให้ถูกต้อง (เมื่อใช้งานร่วมกับ Time Jewel (Int) Lv.3, '
-                                'ลด Cooldown สกิล Jack Frost 0.5 วินาที)\n'
-                                '๐ แก้ไขบัคเมื่อรับเควส The Sign แล้วเกิดเกม Error ขึ้น\n'
-                                '๐ แก้ไข Dialog ของ NPC Eden Quest Level 170 Yuno Nogg Road 3F ให้ถูกต้อง\n'
-                                '๐ แก้ไข NPC Ding Ding Daily ให้ทำงานให้ถูกต้อง\n'
+                                '๐ แก้ไขให้สามารถใช้ Megaphone กับไอเท็ม Document ได้แล้ว\n'
+                                '๐ แก้ไขบัคไม่พบรูปภาพของไอเท็ม Illusion Sprint Shoes ขณะยังไม่ได้ใช้ Magnifier\n'
+                                '๐ แก้ไขให้ไอเท็มดังต่อไปนี้สามารถแลกเปลี่ยนได้\n'
+                                '> Costume The Winner of ROS 2024\n'
+                                '> Costume 1st Runner Up of ROS 2024\n'
+                                '> Costume 2nd Runner Up of ROS 2024\n'
+                                '> Costume 3rd Runner Up of ROS 2024\n'
                             ),
                             inline=False
                         )
@@ -83,7 +81,7 @@ class Chat(commands.Cog):
             embed.add_field(name='Instagram : https://www.instagram.com/gravitygametech_official/',
                             value='',
                             inline=False)
-            embed.set_image(url='https://media.discordapp.net/attachments/1173912177585963048/1281151652585410580/2024-09-05-RO_PatchUpdate_1920X1080.png?ex=66daacf4&is=66d95b74&hm=3d8ed3e1294d3d364f4168ed1861c4c7776a41b29b320566d8c4ef8b114c48e4&=&format=webp&quality=lossless&width=1100&height=618')
+            embed.set_image(url='https://media.discordapp.net/attachments/1173912177585963048/1283715411183140936/459530795_532360245846040_289969461215777392_n.png?ex=66e4a964&is=66e357e4&hm=6130b0f234ab3c9bba66095fedcba05a5a9bd71403c1673dcf8f40550d792e70&=&format=webp&quality=lossless&width=1400&height=720')
             embed.set_thumbnail(url='https://media.discordapp.net/attachments/1119100375681736878/1275733077590671381/kf2.png?ex=66d0d9c3&is=66cf8843&hm=43609ade7253630841d10874395cf4a7730c03d28118f2751161021a1b4f493e&=&format=webp&quality=lossless&width=686&height=686')
 
             # Send Embed to the channel
