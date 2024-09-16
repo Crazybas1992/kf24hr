@@ -1,7 +1,7 @@
 import discord
 from discord.ext import commands
 from discord import Option
-from kafra_beta import GUILD_IDS
+from kafra import GUILD_IDS
 
 class HelpCommands(commands.Cog):
     def __init__(self, bot):
