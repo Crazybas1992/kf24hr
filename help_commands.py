@@ -57,6 +57,7 @@ class HelpCommands(commands.Cog):
 
 
         await ctx.respond(embed=embed, ephemeral=True)
+        return
 
 def setup(bot):
     bot.add_cog(HelpCommands(bot))
