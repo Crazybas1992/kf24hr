@@ -221,6 +221,16 @@ class main(commands.Cog):
 
         # กิจกรรม Cat Hand Gift Packager
         self.add_event(embed, 
+                    "✨ Pre 4th Class ✨",
+                    "⏰ [12 กันยายน 2567 - 16 ตุลาคม 2567]\t[Click](https://ro.gnjoy.in.th/pre-class-4-event/)",
+                    datetime(2024, 10, 16),
+                    now)
+
+        # เว้นระยะห่างหนึ่งบรรทัด
+        embed.add_field(name="\n", value="\n", inline=False)
+
+        # กิจกรรม Cat Hand Gift Packager
+        self.add_event(embed, 
                     "✨ Thanksgiving Event ✨",
                     "⏰ [5 กันยายน 2567 - 3 ตุลาคม 2567]\t[Click](https://ro.gnjoy.in.th/2024-thanksgiving-event/)",
                     datetime(2024, 10, 3),
