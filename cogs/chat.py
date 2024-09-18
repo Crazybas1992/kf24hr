@@ -1,9 +1,9 @@
-# ==================== Import Statements ====================
+# ==================== Import Statements ==================== #
 import discord
 from discord.ext import commands
 import random
 import datetime
-# ===========================================================
+# =========================================================== #
 
 class Chat(commands.Cog):
     def __init__(self, bot):
@@ -15,6 +15,8 @@ class Chat(commands.Cog):
     async def on_message(self, message):
         if message.author == self.bot.user:
             return  # Ignore messages from the bot itself
+
+        # =========================================================== #
 
         # Handle "คาฟ่าอัพเดท?" command
         if message.content.lower() == 'คาฟ่าอัพเดท?':
@@ -88,6 +90,8 @@ class Chat(commands.Cog):
             await message.channel.send(embed=embed)
 
             return  # Ensure that the function exits here to prevent duplicate responses
+
+        # =========================================================== #
         
         # Handle "คาฟ่าดวงของฉันวันนี้?" command
         if message.content.lower() == 'คาฟ่าดวงของฉันวันนี้?':
@@ -106,15 +110,15 @@ class Chat(commands.Cog):
 
             # Generate fortune
             fortune_percent = random.randint(1, 100)
-            lucky_place = random.choice(['Prontera', 'Payon', 'Geffen', 'Morroc', 'Izlude', 'Alberta', 'Juno', 'Aldebaran', 'Lutie', 'Amatsu', 'Kunlun', 'Nifflheim', 'Rachel', 'Valhalla'])
-
-            response = (f"ดวงของคุณ {message.author.mention} วันนี้อยู่ที่ระดับ {fortune_percent}% "
-                        f"สถานที่ให้โชคของคุณก็คือ {lucky_place}")
+            
+            response = (f"ดวงของคุณ {message.author.mention} วันนี้อยู่ที่ระดับ {fortune_percent}% อยากลองเสี่ยงอะไรดูสักหน่อยมั้ยล่ะ?")
 
             await message.channel.send(response)
             return  # Ensure that the function exits here to prevent duplicate responses
         # Process other commands
         await self.bot.process_commands(message)
+        
+        # =========================================================== #
 
         # เงื่อนไขสำหรับข้อความที่ต้องการ
         if message.content.lower() == 'คาฟ่าเรียกลุงมายด์!':
