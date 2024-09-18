@@ -161,7 +161,7 @@ class main(commands.Cog):
                 time_left = start_date - now
                 description_text = f"{description}\n📅 กิจกรรมจะเริ่มใน {time_left.days} วัน {time_left.seconds // 3600} ชั่วโมง"
             elif now > end_date:
-                description_text = f"{description}\n⚠️ รางวัลนี้ได้หมดอายุแล้วเมื่อวันที่ ~~{end_date.strftime('%d-%m-%Y')~~}"
+                description_text = f"{description}\n⚠️ รางวัลนี้ได้หมดอายุแล้วเมื่อวันที่ {end_date.strftime('%d-%m-%Y')}"
             else:
                 time_left = end_date - now
                 days_left = time_left.days
