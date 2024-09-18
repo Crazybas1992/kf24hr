@@ -161,7 +161,7 @@ class main(commands.Cog):
                 time_left = start_date - now
                 description_text = f"{description}\n📅 กิจกรรมจะเริ่มใน {time_left.days} วัน {time_left.seconds // 3600} ชั่วโมง"
             elif now > end_date:
-                description_text = f"{description}\n⚠️ รางวัลนี้ได้หมดอายุแล้วเมื่อวันที่ {end_date.strftime('%d-%m-%Y')}"
+                description_text = f"{description}\n⚠️ รางวัลนี้ได้หมดอายุแล้วเมื่อวันที่ ~~{end_date.strftime('%d-%m-%Y')~~}"
             else:
                 time_left = end_date - now
                 days_left = time_left.days
@@ -182,6 +182,12 @@ class main(commands.Cog):
     async def รางวัลของฉัน(self, ctx: discord.ApplicationContext):
         # ตัวอย่างข้อมูลรางวัล (ควรดึงข้อมูลจริงจากฐานข้อมูลหรือ API)
         rewards = [
+            {
+                "name": "🎁 Item Code: [Not for Sale] Unlimited Fly Wing 7day Box 1ea",
+                "description": "```E60E-8CFC-476C-B014```",
+                "start_date": datetime(2024, 9, 18),
+                "end_date": datetime(2024, 9, 19),
+            },
             {
                 "name": "🎁 Item Code: ROS 2024 Coin จำนวน 50 เหรียญ",
                 "description": "```BD06-2F8C-4DE6-A3EA```",
