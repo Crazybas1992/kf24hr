@@ -31,10 +31,19 @@ if __name__ == "__main__":
         print("Cogs directory not found, creating one.")
         os.makedirs(cogs_dir)  # สร้างไดเรกทอรี cogs ใหม่
     
-    # โหลด Cog ทั้งหมดจากโฟลเดอร์ cogs เพียงครั้งเดียว
-    for file in os.listdir(cogs_dir):
-        if file.endswith('.py'):
-            bot.load_extension(f'cogs.{file[:-3]}')
+    # ค้นหาไฟล์ .py ในโฟลเดอร์ cogs
+    cogs = [file for file in os.listdir(cogs_dir) if file.endswith('.py')]
+    
+    # ตรวจสอบว่ามี Cogs หรือไม่ และทำการโหลด Cog ทั้งหมด
+    if cogs:
+        for file in cogs:
+            try:
+                bot.load_extension(f'cogs.{file[:-3]}')  # โหลด Cog แต่ละไฟล์
+                print(f"Successfully loaded {file}")
+            except Exception as e:
+                print(f"Failed to load cog {file}: {e}")  # จัดการข้อผิดพลาดเมื่อโหลด Cog ล้มเหลว
+    else:
+        print("No Cogs found.")  # หากไม่มี Cog ใดๆ ในโฟลเดอร์
 
     server_on()  # เรียกใช้งาน server_on เพื่อรันเซิร์ฟเวอร์
     bot.run(os.getenv('TOKEN'))  # เรียกใช้งานบอทด้วย Token จาก Environment Variable
