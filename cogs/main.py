@@ -229,15 +229,6 @@ class main(commands.Cog):
         # เว้นระยะห่างหนึ่งบรรทัด
         embed.add_field(name="\n", value="\n", inline=False)
 
-        self.add_event(embed, 
-                    "✨ Cat Hand Gift Packager ✨",
-                    "⏰ [29 สิงหาคม 2567 - 12 กันยายน 2567]\t[Click](https://ro.gnjoy.in.th/special-event-refine-certificate-packager/)",
-                    datetime(2024, 9, 12),
-                    now)
-
-        # เว้นระยะห่างหนึ่งบรรทัด
-        embed.add_field(name="\n", value="\n", inline=False)
-
         # กิจกรรม BATTLE PASS SEASON V
         self.add_event(embed, 
                     "✨ BATTLE PASS SEASON V ✨",
@@ -265,7 +256,7 @@ class main(commands.Cog):
         if time_left.total_seconds() > 0:
             description = f"{link}```\nเหลือเวลาของกิจกรรมอีก {time_left.days} วัน {time_left.seconds // 3600} ชั่วโมง```"
         else:
-            description = f"```กิจกรรมนี้ได้สิ้นสุดลงแล้วเมื่อวันที่ {end_date.strftime('%d %B %Y')}```"
+            description = f"~~`⌛️กิจกรรมนี้ได้สิ้นสุดลงแล้วเมื่อวันที่ {end_date.strftime('%d %B %Y')}`~~"
         
         embed.add_field(name=title, value=description, inline=False)
         
