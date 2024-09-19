@@ -22,69 +22,72 @@ class Chat(commands.Cog):
         if message.content.lower() == 'คาฟ่าอัพเดท?':
             # Create Embed
             embed = discord.Embed(
-                title='📢 รายการอัปเดต วันที่ 12 กันยายน 2567 📢',
+                title='📢 รายการอัปเดตประจำสัปดาห์ 📢',
                 color=0x66FFFF,
-                description='https://ro.gnjoy.in.th/patch-update-12-sep-2567/',
+                description='[รายการอัปเดต วันที่ 19 กันยายน 2567](https://ro.gnjoy.in.th/patch-update-19-september-2567/?fbclid=IwY2xjawFYkm1leHRuA2FlbQIxMAABHbkFG4KjRYsq_WixMHOS_YRsAHlBDt8azM3Ifj52NawIr079LqLy94o9Aw_aem_i-UVzUg-g3M0x_Ugt5AQWQ)',
                 timestamp=discord.utils.utcnow()
             )
-
+            
             embed.add_field(name='✨ รายการอัปเดต', value='', inline=False)
-            embed.add_field(name='๐ Spend Promotion September 2024',
-                            value='> สามารถดูรายละเอียดเพิ่มเติมได้[ที่นี่](https://ro.gnjoy.in.th/spend-promotion-september-2024/)',
-                            inline=False)
-            embed.add_field(name='๐ Malangdo Costume Limited 7Days!',
-                            value='> สามารถดูรายละเอียดเพิ่มเติมได้[ที่นี่](https://ro.gnjoy.in.th/malangdo-costume-limited-7days-12.../)',
-                            inline=False)
-            embed.add_field(name='๐ Pre Event Class 4',
-                            value='> สามารถดูรายละเอียดเพิ่มเติมได้[ที่นี่](https://ro.gnjoy.in.th/pre-class-4-event/)',
-                            inline=False)
-            embed.add_field(name='๐ Update Costume Enchant Stone Box 23',
-                            value='> สามารถดูรายละเอียดเพิ่มเติมได้[ที่นี่](https://ro.gnjoy.in.th/update-enchant-stone-box-23-12.../)',
-                            inline=False)
-            embed.add_field(name='๐ Map Drop System',
-                            value='> สามารถดูรายละเอียดเพิ่มเติมได้[ที่นี่](https://ro.gnjoy.in.th/map-drop-system/)',
-                            inline=False)
-        # เว้นระยะห่างหนึ่งบรรทัด
-            embed.add_field(name="\n", value="\n", inline=False)
-
-            embed.add_field(name='✨ รายการแก้ไข',
-                            value=(
-                                '๐ แก้ไขให้สามารถใช้ Megaphone กับไอเท็ม Document ได้แล้ว\n'
-                                '๐ แก้ไขบัคไม่พบรูปภาพของไอเท็ม Illusion Sprint Shoes ขณะยังไม่ได้ใช้ Magnifier\n'
-                                '๐ แก้ไขให้ไอเท็มดังต่อไปนี้สามารถแลกเปลี่ยนได้\n'
-                                '> Costume The Winner of ROS 2024\n'
-                                '> Costume 1st Runner Up of ROS 2024\n'
-                                '> Costume 2nd Runner Up of ROS 2024\n'
-                                '> Costume 3rd Runner Up of ROS 2024\n'
-                            ),
-                            inline=False
-                        )
+            embed.add_field(
+                name='๐ Saint Crown Scroll [19Sep – 3Oct]',
+                value='> สามารถดูรายละเอียดเพิ่มเติมได้[ที่นี่](https://ro.gnjoy.in.th/saint-crown-scroll/)',
+                inline=False
+            )
+            embed.add_field(
+                name='๐ Special Sparkling Gold Exchange [19Sep – 17Oct]',
+                value='> สามารถดูรายละเอียดเพิ่มเติมได้[ที่นี่](https://ro.gnjoy.in.th/roright/exchange-machine-update/)',
+                inline=False
+            )
+            embed.add_field(
+                name='๐ Spend Promotion September 2024 (V2) [19 – 25Sep]',
+                value='> สามารถดูรายละเอียดเพิ่มเติมได้[ที่นี่](https://ro.gnjoy.in.th/spendpromotion-september-2024-v2/)',
+                inline=False
+            )
             
             # เว้นระยะห่างหนึ่งบรรทัด
             embed.add_field(name="\n", value="\n", inline=False)
-
+    
+            embed.add_field(
+                name='✨ รายการแก้ไข',
+                value=(
+                    '๐ แก้ไข NPC Pre Event 4th Class Event ให้ทำงานให้ถูกต้อง\n'
+                    '> แก้ไขให้สามารถ Enchant Costume ที่มี Enchant อยู่แล้วได้\n'
+                    '> แก้ไขให้เมื่อ Enchant แล้วหิน Slot อื่นไม่หายไป อาทิเช่น effect Stone, Dual Stone, Loft Stone เป็นต้น\n'
+                ),
+                inline=False
+            )
+            
+            embed.add_field(name="\n", value="\n", inline=False)
+    
             embed.add_field(name='✨ Event Now!', value='', inline=False)
-            embed.add_field(name='[5 กันยายน 2567 – 3 ตุลาคม 2567]',
-                            value='Thanksgiving Event [Click](https://ro.gnjoy.in.th/2024-thanksgiving-event/)',
-                            inline=False)
-            embed.add_field(name='[22 สิงหาคม 2567 – 28 พฤศจิกายน 2567]',
-                            value='ROS2024 Merchant [Click](https://ro.gnjoy.in.th/ragnarok-stars-2024-all-events/)',
-                            inline=False)
-            embed.add_field(name='[18 ก.ค. – 17 ต.ค. 2567]',
-                            value='๐ BATTLE PASS SEASON V : Varmundt’s Mansion & Tower of Thanatos [Click](https://ro.gnjoy.in.th/battle-pass-season-v-guide/)',
-                            inline=False)
+                embed.add_field(
+                name='๐ Choco Adventure สดุดีราชาวานร EXP UP +150% (250%)',
+                value='5 กันยายน 2567 – 3 ตุลาคม 2567',
+                inline=False
+            )
+            embed.add_field(
+                name='๐ Thanksgiving Event',
+                value='19 - 23 กันยายน 2567 [Click](https://ro.gnjoy.in.th/2024-thanksgiving-event/)',
+                inline=False
+            )
+            embed.add_field(
+                name='๐ ROS2024 Merchant',
+                value='22 สิงหาคม 2567 – 28 พฤศจิกายน 2567[Click](https://ro.gnjoy.in.th/ragnarok-stars-2024-all-events/)',
+                inline=False
+            )
+            embed.add_field(
+                name='๐ BATTLE PASS SEASON V : Varmundt’s Mansion & Tower of Thanatos',
+                value='18 ก.ค. – 17 ต.ค. 2567[Click](https://ro.gnjoy.in.th/battle-pass-season-v-guide/)',
+                inline=False
+            )
             embed.add_field(name='▂▂▂▂▂▂▂▂▂▂▂▂▂▂', value='', inline=False)
-            embed.add_field(name='Website RO : https://ro.gnjoy.in.th/',
-                            value='',
-                            inline=False)
-            embed.add_field(name='Website Gnjoy : https://www.gnjoy.in.th/',
-                            value='',
-                            inline=False)
-            embed.add_field(name='Instagram : https://www.instagram.com/gravitygametech_official/',
-                            value='',
-                            inline=False)
-            embed.set_image(url='https://media.discordapp.net/attachments/1173912177585963048/1283715411183140936/459530795_532360245846040_289969461215777392_n.png?ex=66e4a964&is=66e357e4&hm=6130b0f234ab3c9bba66095fedcba05a5a9bd71403c1673dcf8f40550d792e70&=&format=webp&quality=lossless&width=1400&height=720')
-            embed.set_thumbnail(url='https://media.discordapp.net/attachments/1119100375681736878/1275733077590671381/kf2.png?ex=66d0d9c3&is=66cf8843&hm=43609ade7253630841d10874395cf4a7730c03d28118f2751161021a1b4f493e&=&format=webp&quality=lossless&width=686&height=686')
+            embed.add_field(name='Website RO : https://ro.gnjoy.in.th/', value='', inline=False)
+            embed.add_field(name='Website Gnjoy : https://www.gnjoy.in.th/', value='', inline=False)
+            embed.add_field(name='Instagram : https://www.instagram.com/gravitygametech_official/', value='', inline=False)
+            
+            embed.set_image(url='https://media.discordapp.net/attachments/1173912177585963048/1283715411183140936/459530795_532360245846040_289969461215777392_n.png')
+            embed.set_thumbnail(url='https://media.discordapp.net/attachments/1119100375681736878/1275733077590671381/kf2.png')
 
             # Send Embed to the channel
             await message.channel.send(embed=embed)
