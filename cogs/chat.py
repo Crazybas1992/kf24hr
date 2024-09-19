@@ -61,7 +61,7 @@ class Chat(commands.Cog):
             embed.add_field(name="\n", value="\n", inline=False)
     
             embed.add_field(name='✨ Event Now!', value='', inline=False)
-                embed.add_field(
+            embed.add_field(
                 name='๐ Choco Adventure สดุดีราชาวานร EXP UP +150% (250%)',
                 value='5 กันยายน 2567 – 3 ตุลาคม 2567',
                 inline=False
