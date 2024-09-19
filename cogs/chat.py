@@ -86,7 +86,7 @@ class Chat(commands.Cog):
             embed.add_field(name='Website Gnjoy : https://www.gnjoy.in.th/', value='', inline=False)
             embed.add_field(name='Instagram : https://www.instagram.com/gravitygametech_official/', value='', inline=False)
             
-            embed.set_image(url='https://media.discordapp.net/attachments/1173912177585963048/1283715411183140936/459530795_532360245846040_289969461215777392_n.png')
+            embed.set_image(url='https://media.discordapp.net/attachments/1173912177585963048/1286202719140315211/460290319_537016578713740_276002939991631983_n.png?ex=66ed0d20&is=66ebbba0&hm=b4242d4f282f4609caaa05d05da63a5ddf9331c4eca86aced77d1f56267aa744&=&format=webp&quality=lossless&width=1050&height=700')
             embed.set_thumbnail(url='https://media.discordapp.net/attachments/1119100375681736878/1275733077590671381/kf2.png')
 
             # Send Embed to the channel
