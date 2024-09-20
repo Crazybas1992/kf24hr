@@ -91,7 +91,7 @@ class DailyAnnouncement(commands.Cog):
         )
         embed.add_field(
             name='๐ Thanksgiving Event',
-            value='> 19 - 23 กันยายน 2567 [Click](https://ro.gnjoy.in.th/2024-thanksgiving-event/)',
+            value='> 5 กันยายน 2567 – 3 ตุลาคม 2567 [Click](https://ro.gnjoy.in.th/2024-thanksgiving-event/)',
             inline=False
         )
         embed.add_field(
