@@ -52,8 +52,8 @@ class Chat(commands.Cog):
                 name='✨ รายการแก้ไข',
                 value=(
                     '๐ แก้ไข NPC Pre Event 4th Class Event ให้ทำงานให้ถูกต้อง\n'
-                    '> แก้ไขให้สามารถ Enchant Costume ที่มี Enchant อยู่แล้วได้\n'
-                    '> แก้ไขให้เมื่อ Enchant แล้วหิน Slot อื่นไม่หายไป อาทิเช่น effect Stone, Dual Stone, Loft Stone เป็นต้น\n'
+                    '> ๐ แก้ไขให้สามารถ Enchant Costume ที่มี Enchant อยู่แล้วได้\n'
+                    '> ๐ แก้ไขให้เมื่อ Enchant แล้วหิน Slot อื่นไม่หายไป อาทิเช่น effect Stone, Dual Stone, Loft Stone เป็นต้น\n'
                 ),
                 inline=False
             )
@@ -63,22 +63,22 @@ class Chat(commands.Cog):
             embed.add_field(name='✨ Event Now!', value='', inline=False)
             embed.add_field(
                 name='๐ Choco Adventure สดุดีราชาวานร EXP UP +150% (250%)',
-                value='5 กันยายน 2567 – 3 ตุลาคม 2567',
+                value='> 19 กันยายน 2567 – 23 กันยายน 2567',
                 inline=False
             )
             embed.add_field(
                 name='๐ Thanksgiving Event',
-                value='19 - 23 กันยายน 2567 [Click](https://ro.gnjoy.in.th/2024-thanksgiving-event/)',
+                value='> 5 กันยายน 2567 – 3 ตุลาคม 2567 [Click](https://ro.gnjoy.in.th/2024-thanksgiving-event/)',
                 inline=False
             )
             embed.add_field(
                 name='๐ ROS2024 Merchant',
-                value='22 สิงหาคม 2567 – 28 พฤศจิกายน 2567[Click](https://ro.gnjoy.in.th/ragnarok-stars-2024-all-events/)',
+                value='> 22 สิงหาคม 2567 – 28 พฤศจิกายน 2567[Click](https://ro.gnjoy.in.th/ragnarok-stars-2024-all-events/)',
                 inline=False
             )
             embed.add_field(
                 name='๐ BATTLE PASS SEASON V : Varmundt’s Mansion & Tower of Thanatos',
-                value='18 ก.ค. – 17 ต.ค. 2567[Click](https://ro.gnjoy.in.th/battle-pass-season-v-guide/)',
+                value='> 18 ก.ค. – 17 ต.ค. 2567[Click](https://ro.gnjoy.in.th/battle-pass-season-v-guide/)',
                 inline=False
             )
             embed.add_field(name='▂▂▂▂▂▂▂▂▂▂▂▂▂▂', value='', inline=False)
