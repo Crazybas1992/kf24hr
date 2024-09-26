@@ -47,24 +47,14 @@ class DailyAnnouncement(commands.Cog):
         embed = discord.Embed(
             title='📢 รายการอัปเดตประจำสัปดาห์ 📢',
             color=0x66FFFF,
-            description='[รายการอัปเดต วันที่ 19 กันยายน 2567](https://ro.gnjoy.in.th/patch-update-19-september-2567/?fbclid=IwY2xjawFYkm1leHRuA2FlbQIxMAABHbkFG4KjRYsq_WixMHOS_YRsAHlBDt8azM3Ifj52NawIr079LqLy94o9Aw_aem_i-UVzUg-g3M0x_Ugt5AQWQ)',
+            description='[รายการอัปเดต วันที่ 26 กันยายน 2567](https://ro.gnjoy.in.th/patch-update-26-september-2567/?fbclid=IwY2xjawFhtRxleHRuA2FlbQIxMAABHaUyudRofWlfzNaYqkDLkR04H9PUjHQqPHBQ0c6E94_E3QkVO32vFYXq0A_aem_2ULHWrW53-L_9ytppqkrdg)',
             timestamp=discord.utils.utcnow()
         )
         
         embed.add_field(name='✨ รายการอัปเดต', value='', inline=False)
         embed.add_field(
-            name='๐ Saint Crown Scroll [19Sep – 3Oct]',
-            value='> สามารถดูรายละเอียดเพิ่มเติมได้[ที่นี่](https://ro.gnjoy.in.th/saint-crown-scroll/)',
-            inline=False
-        )
-        embed.add_field(
-            name='๐ Special Sparkling Gold Exchange [19Sep – 17Oct]',
-            value='> สามารถดูรายละเอียดเพิ่มเติมได้[ที่นี่](https://ro.gnjoy.in.th/roright/exchange-machine-update/)',
-            inline=False
-        )
-        embed.add_field(
-            name='๐ Spend Promotion September 2024 (V2) [19 – 25Sep]',
-            value='> สามารถดูรายละเอียดเพิ่มเติมได้[ที่นี่](https://ro.gnjoy.in.th/spendpromotion-september-2024-v2/)',
+            name='๐ Old Card Album Update List',
+            value='> สามารถดูรายละเอียดเพิ่มเติมได้[ที่นี่](https://ro.gnjoy.in.th/old-card-album-update-list-26-sep-2024/?fbclid=IwY2xjawFhtXNleHRuA2FlbQIxMAABHY0gjJO91HFM3F6J7lnCkVhaMT7vRHX8vJPyrs9GA-XPr-z6t4yEqFULEQ_aem_Y4y3RUvZ0-hZRKEidGMbQg)',
             inline=False
         )
         
@@ -74,13 +64,12 @@ class DailyAnnouncement(commands.Cog):
         embed.add_field(
             name='✨ รายการแก้ไข',
             value=(
-                '๐ แก้ไข NPC Pre Event 4th Class Event ให้ทำงานให้ถูกต้อง\n'
-                '> ๐ แก้ไขให้สามารถ Enchant Costume ที่มี Enchant อยู่แล้วได้\n'
-                '> ๐ แก้ไขให้เมื่อ Enchant แล้วหิน Slot อื่นไม่หายไป อาทิเช่น effect Stone, Dual Stone, Loft Stone เป็นต้น\n'
+                '๐ แก้ไขรูป Sprite ของไอเท็ม Old Detachment Ring ให้ถูกต้อง\n'
+                '๐ แก้ไขคำอธิบายของไอเท็ม Booster Pack (180,190) ให้ถูกต้อง\n'
             ),
             inline=False
         )
-        
+    
         embed.add_field(name="\n", value="\n", inline=False)
 
         embed.add_field(name='✨ Event Now!', value='', inline=False)
