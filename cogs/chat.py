@@ -24,24 +24,14 @@ class Chat(commands.Cog):
             embed = discord.Embed(
                 title='📢 รายการอัปเดตประจำสัปดาห์ 📢',
                 color=0x66FFFF,
-                description='[รายการอัปเดต วันที่ 19 กันยายน 2567](https://ro.gnjoy.in.th/patch-update-19-september-2567/?fbclid=IwY2xjawFYkm1leHRuA2FlbQIxMAABHbkFG4KjRYsq_WixMHOS_YRsAHlBDt8azM3Ifj52NawIr079LqLy94o9Aw_aem_i-UVzUg-g3M0x_Ugt5AQWQ)',
+                description='[รายการอัปเดต วันที่ 26 กันยายน 2567](https://ro.gnjoy.in.th/patch-update-26-september-2567/?fbclid=IwY2xjawFhtRxleHRuA2FlbQIxMAABHaUyudRofWlfzNaYqkDLkR04H9PUjHQqPHBQ0c6E94_E3QkVO32vFYXq0A_aem_2ULHWrW53-L_9ytppqkrdg)',
                 timestamp=discord.utils.utcnow()
             )
             
             embed.add_field(name='✨ รายการอัปเดต', value='', inline=False)
             embed.add_field(
-                name='๐ Saint Crown Scroll [19Sep – 3Oct]',
-                value='> สามารถดูรายละเอียดเพิ่มเติมได้[ที่นี่](https://ro.gnjoy.in.th/saint-crown-scroll/)',
-                inline=False
-            )
-            embed.add_field(
-                name='๐ Special Sparkling Gold Exchange [19Sep – 17Oct]',
-                value='> สามารถดูรายละเอียดเพิ่มเติมได้[ที่นี่](https://ro.gnjoy.in.th/roright/exchange-machine-update/)',
-                inline=False
-            )
-            embed.add_field(
-                name='๐ Spend Promotion September 2024 (V2) [19 – 25Sep]',
-                value='> สามารถดูรายละเอียดเพิ่มเติมได้[ที่นี่](https://ro.gnjoy.in.th/spendpromotion-september-2024-v2/)',
+                name='๐ Old Card Album Update List',
+                value='> สามารถดูรายละเอียดเพิ่มเติมได้[ที่นี่](https://ro.gnjoy.in.th/old-card-album-update-list-26-sep-2024/?fbclid=IwY2xjawFhtXNleHRuA2FlbQIxMAABHY0gjJO91HFM3F6J7lnCkVhaMT7vRHX8vJPyrs9GA-XPr-z6t4yEqFULEQ_aem_Y4y3RUvZ0-hZRKEidGMbQg)',
                 inline=False
             )
             
@@ -51,9 +41,8 @@ class Chat(commands.Cog):
             embed.add_field(
                 name='✨ รายการแก้ไข',
                 value=(
-                    '๐ แก้ไข NPC Pre Event 4th Class Event ให้ทำงานให้ถูกต้อง\n'
-                    '> ๐ แก้ไขให้สามารถ Enchant Costume ที่มี Enchant อยู่แล้วได้\n'
-                    '> ๐ แก้ไขให้เมื่อ Enchant แล้วหิน Slot อื่นไม่หายไป อาทิเช่น effect Stone, Dual Stone, Loft Stone เป็นต้น\n'
+                    '๐ แก้ไขรูป Sprite ของไอเท็ม Old Detachment Ring ให้ถูกต้อง\n'
+                    '๐ แก้ไขคำอธิบายของไอเท็ม Booster Pack (180,190) ให้ถูกต้อง\n'
                 ),
                 inline=False
             )
@@ -81,7 +70,7 @@ class Chat(commands.Cog):
             embed.add_field(name='Website Gnjoy : https://www.gnjoy.in.th/', value='', inline=False)
             embed.add_field(name='Instagram : https://www.instagram.com/gravitygametech_official/', value='', inline=False)
             
-            embed.set_image(url='https://media.discordapp.net/attachments/1173912177585963048/1286202719140315211/460290319_537016578713740_276002939991631983_n.png?ex=66ed0d20&is=66ebbba0&hm=b4242d4f282f4609caaa05d05da63a5ddf9331c4eca86aced77d1f56267aa744&=&format=webp&quality=lossless&width=1050&height=700')
+            embed.set_image(url='https://media.discordapp.net/attachments/1173912177585963048/1288706536700645407/461277287_541964994885565_233848135711251112_n.png?ex=66f628fd&is=66f4d77d&hm=55bc4d2434cff7da3b8e61135d45b50ad0d29780170075ae082e511862262227&=&format=webp&quality=lossless&width=1050&height=700')
             embed.set_thumbnail(url='https://media.discordapp.net/attachments/1119100375681736878/1275733077590671381/kf2.png')
 
             # Send Embed to the channel
