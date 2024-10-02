@@ -96,6 +96,15 @@ class DailyAnnouncement(commands.Cog):
         embed.add_field(name='✨ __Event Now!__', value='', inline=False)
         self.add_event(
             embed,
+            title="๐ 📜 Pre 4th Class",
+            link="ระยะเวลากิจกรรม : 12 กันยายน 2567 – 16 ตุลาคม 2567 (23:59 น.) [Click](https://ro.gnjoy.in.th/pre-class-4-event/?fbclid=IwY2xjawFpm0xleHRuA2FlbQIxMAABHazpaXIod_b2BvireEhblxkxn59mRbrHhhAF5QbydlIhH0by5RhnPaFeug_aem_1_UAYWi6pw_Jt_eQ38VuQg)",
+            end_date=datetime(2024, 10, 16)
+        )
+
+        embed.add_field(name="\n", value="", inline=False)
+        
+        self.add_event(
+            embed,
             title="๐ 📜 ROAD TO 4th CLASS กิจกรรมเก็บเลเวลเตรียมความพร้อมสู่คลาสสี่",
             link="EXP UP +150% (ก่อนปิดปรับปรุงเซิร์ฟเวอร์) [Click](https://www.facebook.com/photo?fbid=541902978225100&set=a.266706959078038)",
             end_date=datetime(2024, 10, 3)
