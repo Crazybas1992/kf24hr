@@ -69,24 +69,37 @@ class DailyAnnouncement(commands.Cog):
         embed = discord.Embed(
             title='📢 __รายการอัปเดตประจำสัปดาห์__ 📢',
             color=0x66FFFF,
-            description='[รายการอัปเดต วันที่ 26 กันยายน 2567](https://ro.gnjoy.in.th/patch-update-26-september-2567/)',
+            description='[รายการอัปเดต วันที่ 3 ตุลาคม 2567](https://ro.gnjoy.in.th/patch-update-3-october-2567/?fbclid=IwY2xjawFrLMRleHRuA2FlbQIxMAABHTS-zELVGa-c3bD0hlw3JHvPpJwgeqoAqi2Ir6t4mpHzuVEXK9tdBG9Z3w_aem_yN9-RWmGb_oKKMKj9Ds5Tw)',
         )
         
         embed.add_field(name='✨ __รายการอัปเดต__', value='', inline=False)
         embed.add_field(
-            name='๐ Old Card Album Update List',
-            value='> สามารถดูรายละเอียดเพิ่มเติมได้[ที่นี่](https://ro.gnjoy.in.th/old-card-album-update-list-26-sep-2024/?fbclid=IwY2xjawFhtXNleHRuA2FlbQIxMAABHY0gjJO91HFM3F6J7lnCkVhaMT7vRHX8vJPyrs9GA-XPr-z6t4yEqFULEQ_aem_Y4y3RUvZ0-hZRKEidGMbQg)',
+            name='๐ Ragnarok Online x Shiba Says',
+            value='> พบกับการเดินทางทั่วโลก RO ไปกับเพื่อนใหม่สามารถดูรายละเอียดเพิ่มเติมได้ [ที่นี่](https://ro.gnjoy.in.th/ragnarok-online-x-shibasays-event-guide/?fbclid=IwY2xjawFrqExleHRuA2FlbQIxMAABHTWr1Ttrcnft2oxytmbPDbtW0SAr4_VDhFzYv-wGRi5mF3y41JQn_c0rKQ_aem_uH_RpTdAJQgQOm_Lm4QqFA)',
             inline=False
         )
-        
+        embed.add_field(
+            name='๐ Shibasays Scroll',
+            value='> ไข่ใหม่สามารถดูรายละเอียดเพิ่มเติมได้ [ที่นี่](https://ro.gnjoy.in.th/shibasays-scroll/)',
+            inline=False
+        )
+        embed.add_field(
+            name='๐ Lapine Box Update! 3 October 2024',
+            value='> สามารถดูรายละเอียดเพิ่มเติมได้ [ที่นี่](https://ro.gnjoy.in.th/lapine-box-update-3-october-2024/?fbclid=IwY2xjawFrqWpleHRuA2FlbQIxMAABHdOkg6Q1-lkT-um0t7wmnl-hqNjFbWttZ4rh-_i36xFryobORWoO3vCkaw_aem_r29WCM5ZbX8PyQuDUhHxeg)',
+            inline=False
+        )
+        embed.add_field(
+            name='๐ Daily Login 2.0 October 2024',
+            value='> สามารถดูรายละเอียดเพิ่มเติมได้ [ที่นี่](https://ro.gnjoy.in.th/daily-login-2-0-october-2024/)',
+            inline=False
+        )
         # เว้นระยะห่างหนึ่งบรรทัด
         embed.add_field(name="\n", value="\n", inline=False)
 
         embed.add_field(
             name='✨ __รายการแก้ไข__',
             value=(
-                '> ๐ 🛠 แก้ไขรูป Sprite ของไอเท็ม Old Detachment Ring ให้ถูกต้อง\n'
-                '> ๐ 🛠 แก้ไขคำอธิบายของไอเท็ม Booster Pack (180,190) ให้ถูกต้อง\n'
+                '> ๐ 🛠 ในอาทิตย์นี้ไม่มีรายการแก้ไข\n'
             ),
             inline=False
         )
@@ -95,6 +108,14 @@ class DailyAnnouncement(commands.Cog):
 
         embed.add_field(name='✨ __Event Now!__', value='', inline=False)
         self.add_event(
+            embed,
+            title="๐ 📜 Ragnarok Online x Shiba Says",
+            link="ระยะเวลากิจกรรม 3 – 31 ตุลาคม 2567 (ก่อนปิดปรับปรุงเซิร์ฟเวอร์) [Click](https://ro.gnjoy.in.th/ragnarok-online-x-shibasays-event-guide/?fbclid=IwY2xjawFrql5leHRuA2FlbQIxMAABHTWr1Ttrcnft2oxytmbPDbtW0SAr4_VDhFzYv-wGRi5mF3y41JQn_c0rKQ_aem_uH_RpTdAJQgQOm_Lm4QqFA)",
+            end_date=datetime(2024, 10, 31)
+        )
+
+        embed.add_field(name="\n", value="", inline=False)
+            
             embed,
             title="๐ 📜 Pre 4th Class",
             link="ระยะเวลากิจกรรม : 12 กันยายน 2567 – 16 ตุลาคม 2567 (23:59 น.) [Click](https://ro.gnjoy.in.th/pre-class-4-event/?fbclid=IwY2xjawFpm0xleHRuA2FlbQIxMAABHazpaXIod_b2BvireEhblxkxn59mRbrHhhAF5QbydlIhH0by5RhnPaFeug_aem_1_UAYWi6pw_Jt_eQ38VuQg)",
