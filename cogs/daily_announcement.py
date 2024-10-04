@@ -166,7 +166,7 @@ class DailyAnnouncement(commands.Cog):
         embed.add_field(name='Website Gnjoy : https://www.gnjoy.in.th/', value='', inline=False)
         embed.add_field(name='Instagram : https://www.instagram.com/gravitygametech_official/', value='', inline=False)
         
-        embed.set_image(url='https://media.discordapp.net/attachments/1173912177585963048/1288706536700645407/461277287_541964994885565_233848135711251112_n.png?ex=66fcc07d&is=66fb6efd&hm=6a770fe49d7114f398b9b0f4ce2787b18ebcf6393ddc03d32cf901b78a3b5188&=&format=webp&quality=lossless&width=1029&height=686')
+        embed.set_image(url='https://media.discordapp.net/attachments/1173912177585963048/1291369196059623496/461931238_547162507699147_7256492221790226312_n.png?ex=67008188&is=66ff3008&hm=165020644a3a8c3f6565f3c1f1e834960067ea2db8c002a549ad24c93a0ca95f&=&format=webp&quality=lossless&width=960&height=640')
         embed.set_thumbnail(url='https://media.discordapp.net/attachments/1119100375681736878/1275733077590671381/kf2.png')
 
         return embed
