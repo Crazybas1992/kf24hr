@@ -22,23 +22,23 @@ class Chat(commands.Cog):
             embed = discord.Embed(
                 title='✨ __รวมไอดีของลุงมายด์__ ✨',
                 color=0x66FFFF,
-                description='> หากคุณกำลังประสบกับปัญหา เกราะแตก , ตีมอนไม่เข้า , ตั๋ววาร์ปหมด ปัญหาเหล่านี้จะหมดไปเมื่อมีไอดีลุงมายด์!',
+                description='> หากคุณกำลังประสบกับปัญหา เกราะแตก , ตีมอนไม่เข้า , ตั๋ววาร์ปหมด ปัญหาเหล่านี้จะหมดไปเมื่อมีไอดีลุงมายด์!\n▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂',
             )
             
-            embed.add_field(name=':man_scientist: ไอดี Genetic เคลือบเกราะ', value='', inline=False)
+            embed.add_field(name=':man_scientist: ไอดี Genetic เคลือบเกราะ', value='', inline=True)
             embed.add_field(
                 name='๐ ตัวละคร Genetic',
-                value='> Id : ```mildro01```' \t Password : ```Mild1234``` \t รหัส4ตัว : ``1423``,
+                value='> Id : ```mildro01``` \t Password : ```Mild1234``` \t รหัส4ตัว : ``1423``\n▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂',
                 inline=False
             )
             
             # เว้นระยะห่างหนึ่งบรรทัด
             embed.add_field(name="\n", value="\n", inline=False)
 
-            embed.add_field(name=':mage: ไอดี Sorcerer เคลือบอาวุธ', value='', inline=False)
+            embed.add_field(name=':mage: ไอดี Sorcerer เคลือบอาวุธ', value='', inline=True)
             embed.add_field(
                 name='๐ ตัวละคร Sorcerer',
-                value='> Id : ```mildro02```' \t Password : ```Mild1234``` \t รหัส4ตัว : ``2535``,
+                value='> Id : ```mildro02```\t Password : ```Mild1234```\t รหัส4ตัว : ``2535``\n▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂',
                 inline=False
             )
 
@@ -48,7 +48,7 @@ class Chat(commands.Cog):
             embed.add_field(name=':church: ไอดี Acolyte วาร์ป', value='', inline=False)
             embed.add_field(
                 name='๐ ตัวละคร Acolyte',
-                value='> Id : ```mildro03```' \t Password : ```Mild1234``` \t รหัส4ตัว : ``1423``,
+                value='> Id : ```mildro03```\t Password : ```Mild1234``` \t รหัส4ตัว : ``1423``',
                 inline=False
             )
 
