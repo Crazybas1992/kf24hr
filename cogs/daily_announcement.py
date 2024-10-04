@@ -25,7 +25,7 @@ class DailyAnnouncement(commands.Cog):
         # ตรวจสอบเวลาเป้าหมายในวันนี้
         if now.hour == 8 and now.minute == 30: 
             print(f"Sending announcement at {now.isoformat()}")
-            expiration_date = datetime(2024, 10, 2, 12, 0, tzinfo=timezone(timedelta(hours=7)))  # วันที่และเวลาหมดอายุ
+            expiration_date = datetime(2024, 10, 9, 12, 0, tzinfo=timezone(timedelta(hours=7)))  # วันที่และเวลาหมดอายุ
             if now >= expiration_date:
                 return  # หากวันที่หมดอายุผ่านไปแล้ว ให้หยุดประกาศ
 
