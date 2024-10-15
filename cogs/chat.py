@@ -58,7 +58,7 @@ class Chat(commands.Cog):
             embed.set_image(url='https://media.discordapp.net/attachments/1173912177585963048/1291645672512290886/Ro_CT_copy.jpg?ex=6700da45&is=66ff88c5&hm=ade4994c2bdeb59d5e96f5b533112e396073e9055b9e840310ce174c6c76e1ed&=&format=webp')
             embed.set_thumbnail(url='https://media.discordapp.net/attachments/1173912177585963048/1291607292411641887/804-mets_alpha.png?ex=6700b687&is=66ff6507&hm=6535b644b35d4c28b98ecd425d5dfe3de79df341bd6218ff9dc8ad5eb6852e8b&=&format=webp&quality=lossless')
 
-            await message.channel.send(embed=embed)
+            await ctx.respond(embed=embed, ephemeral=True)
             
         # =========================================================== #
         
