@@ -25,7 +25,7 @@ class DailyAnnouncement(commands.Cog):
         # ตรวจสอบเวลาเป้าหมายในวันนี้
         if now.hour == 8 and now.minute == 30: 
             print(f"Sending announcement at {now.isoformat()}")
-            expiration_date = datetime(2024, 10, 9, 12, 0, tzinfo=timezone(timedelta(hours=7)))  # วันที่และเวลาหมดอายุ
+            expiration_date = datetime(2024, 10, 23, 12, 0, tzinfo=timezone(timedelta(hours=7)))  # วันที่และเวลาหมดอายุ
             if now >= expiration_date:
                 return  # หากวันที่หมดอายุผ่านไปแล้ว ให้หยุดประกาศ
 
@@ -58,7 +58,7 @@ class DailyAnnouncement(commands.Cog):
         if time_left.total_seconds() > 0:
             description = f"{link}\n⏳``เหลือเวลาของกิจกรรมอีก {time_left.days} วัน {time_left.seconds // 3600} ชั่วโมง``⏳"
         else:
-            description = f"❌``กิจกรรมนี้ได้สิ้นสุดลงแล้วเมื่อวันที่ {end_date.strftime('%d %B %Y')}``❌"
+            description = f"❌``กิจกรรมนี้ได้สิ้นสุดลงแล้วเมื่อวันที่ {end_date.strftime('%d %B %Y')}``"
 
         embed.add_field(name=title, value=description, inline=False)
 
@@ -69,30 +69,29 @@ class DailyAnnouncement(commands.Cog):
         embed = discord.Embed(
             title='📢 __รายการอัปเดตประจำสัปดาห์__ 📢',
             color=0x66FFFF,
-            description='[รายการอัปเดต วันที่ 3 ตุลาคม 2567](https://ro.gnjoy.in.th/patch-update-3-october-2567/?fbclid=IwY2xjawFrLMRleHRuA2FlbQIxMAABHTS-zELVGa-c3bD0hlw3JHvPpJwgeqoAqi2Ir6t4mpHzuVEXK9tdBG9Z3w_aem_yN9-RWmGb_oKKMKj9Ds5Tw)',
+            description='[รายการอัปเดต วันที่ 17 ตุลาคม 2567](https://ro.gnjoy.in.th/patch-update-17-october-2567/?fbclid=IwY2xjawF-C6RleHRuA2FlbQIxMAABHdwWML2yuQKhCUlfmGy5AFxDjMrw2wTNxpWUaZrC9EFiKfewiWau8B4wRw_aem_I70Kpo7ayHervakv8bdIUw)',
         )
         
         embed.add_field(name='✨ __รายการอัปเดต__', value='', inline=False)
         embed.add_field(
-            name='๐ Ragnarok Online x Shiba Says',
-            value='> พบกับการเดินทางทั่วโลก RO ไปกับเพื่อนใหม่สามารถดูรายละเอียดเพิ่มเติมได้ [ที่นี่](https://ro.gnjoy.in.th/ragnarok-online-x-shibasays-event-guide/?fbclid=IwY2xjawFrqExleHRuA2FlbQIxMAABHTWr1Ttrcnft2oxytmbPDbtW0SAr4_VDhFzYv-wGRi5mF3y41JQn_c0rKQ_aem_uH_RpTdAJQgQOm_Lm4QqFA)',
+            name='๐ Year of Dragon Scroll',
+            value='> ไข่ใหม่สามารถดูรายละเอียดเพิ่มเติมได้ [ที่นี่](https://ro.gnjoy.in.th/year-of-dragon-scroll/)',
             inline=False
         )
         embed.add_field(
-            name='๐ Shibasays Scroll',
-            value='> ไข่ใหม่สามารถดูรายละเอียดเพิ่มเติมได้ [ที่นี่](https://ro.gnjoy.in.th/shibasays-scroll/)',
+            name='๐ Dragon Skull Guarantee Exchange',
+            value='> สามารถดูรายละเอียดเพิ่มเติมได้ [ที่นี่](https://ro.gnjoy.in.th/dragon-skull-guarantee-exchange/)',
             inline=False
         )
         embed.add_field(
-            name='๐ Lapine Box Update! 3 October 2024',
-            value='> สามารถดูรายละเอียดเพิ่มเติมได้ [ที่นี่](https://ro.gnjoy.in.th/lapine-box-update-3-october-2024/?fbclid=IwY2xjawFrqWpleHRuA2FlbQIxMAABHdOkg6Q1-lkT-um0t7wmnl-hqNjFbWttZ4rh-_i36xFryobORWoO3vCkaw_aem_r29WCM5ZbX8PyQuDUhHxeg)',
+            name='๐ Flash Sale Starter Pack',
+            value='> สามารถดูรายละเอียดเพิ่มเติมได้ [ที่นี่](https://ro.gnjoy.in.th/flash-sale-starter-pack/)',
             inline=False
         )
         embed.add_field(
-            name='๐ Daily Login 2.0 October 2024',
-            value='> สามารถดูรายละเอียดเพิ่มเติมได้ [ที่นี่](https://ro.gnjoy.in.th/daily-login-2-0-october-2024/)',
+            name='๐ Spend Promotion',
+            value='> สามารถดูรายละเอียดเพิ่มเติมได้ [ที่นี่](https://ro.gnjoy.in.th/spend-promotion-october-2024/)',
             inline=False
-        )
         # เว้นระยะห่างหนึ่งบรรทัด
         embed.add_field(name="\n", value="\n", inline=False)
 
@@ -118,30 +117,20 @@ class DailyAnnouncement(commands.Cog):
 
         self.add_event(
             embed,
-            title="๐ 📜 Pre 4th Class",
-            link="ระยะเวลากิจกรรม : 12 กันยายน 2567 – 16 ตุลาคม 2567 (23:59 น.) [Click](https://ro.gnjoy.in.th/pre-class-4-event/?fbclid=IwY2xjawFpm0xleHRuA2FlbQIxMAABHazpaXIod_b2BvireEhblxkxn59mRbrHhhAF5QbydlIhH0by5RhnPaFeug_aem_1_UAYWi6pw_Jt_eQ38VuQg)",
-            end_date=datetime(2024, 10, 16)
+            title="๐ 📜 2024 Halloween Event",
+            link="ระยะเวลากิจกรรม : 17 ตุลาคม 2567 – 14 พฤศจิกายน 2567 [Click](https://ro.gnjoy.in.th/2024-halloween-event/)",
+            end_date=datetime(2024, 11, 14)
         )
 
         embed.add_field(name="\n", value="", inline=False)
         
         self.add_event(
             embed,
-            title="๐ 📜 ROAD TO 4th CLASS กิจกรรมเก็บเลเวลเตรียมความพร้อมสู่คลาสสี่",
-            link="EXP UP +150% (ก่อนปิดปรับปรุงเซิร์ฟเวอร์) [Click](https://www.facebook.com/photo?fbid=541902978225100&set=a.266706959078038)",
-            end_date=datetime(2024, 10, 3)
+            title="๐ 📜 Pao-Ying-Chub Top Up Promotion",
+            link="เกม เป้ายิงฉุบไต่หอคอย [Click](https://event.gnjoy.in.th/RagnarokOnline/RO4thClasses/Minigame)",
+            end_date=datetime(2024, 11, 12)
         )
 
-        embed.add_field(name="\n", value="", inline=False)
-
-
-        self.add_event(
-            embed,
-            title="๐ 📜 Thanksgiving Event",
-            link="เทศกาลเก็บเกี่ยว [Click](https://ro.gnjoy.in.th/2024-thanksgiving-event/)",
-            end_date=datetime(2024, 10, 3)
-        )
-        
         embed.add_field(name="\n", value="", inline=False)
 
         self.add_event(
@@ -155,9 +144,9 @@ class DailyAnnouncement(commands.Cog):
 
         self.add_event(
             embed,
-            title="๐ 📜 BATTLE PASS SEASON V",
-            link="Varmundt’s Mansion & Tower of Thanatos [Click](https://ro.gnjoy.in.th/battle-pass-season-v-guide/)",
-            end_date=datetime(2024, 10, 17)
+            title="๐ 📜 Shadow of Nidhoggur’s Box Top Up Promotion",
+            link="ระยะเวลาโปรโมชั่น : 17 ตุลาคม 2567 (12:00) – 22 ตุลาคม 2567 (23:59) [Click](https://ro.gnjoy.in.th/shadow-of-nidhoggurs-box-top-up-promotion/)",
+            end_date=datetime(2024, 10, 22)
         )
 
         # เพิ่มข้อมูลพื้นฐานอื่นๆ
@@ -166,7 +155,7 @@ class DailyAnnouncement(commands.Cog):
         embed.add_field(name='Website Gnjoy : https://www.gnjoy.in.th/', value='', inline=False)
         embed.add_field(name='Instagram : https://www.instagram.com/gravitygametech_official/', value='', inline=False)
         
-        embed.set_image(url='https://media.discordapp.net/attachments/1173912177585963048/1291369196059623496/461931238_547162507699147_7256492221790226312_n.png?ex=67008188&is=66ff3008&hm=165020644a3a8c3f6565f3c1f1e834960067ea2db8c002a549ad24c93a0ca95f&=&format=webp&quality=lossless&width=960&height=640')
+        embed.set_image(url='https://media.discordapp.net/attachments/1173912177585963048/1296493700268036166/463611808_557324230016308_1916647546017512476_n.png?ex=67127d59&is=67112bd9&hm=50f16e0eec6d09b131354d24183a4b050a9f9d644bec64f815d41561f1727ef9&=&format=webp&quality=lossless&width=1706&height=1138')
         embed.set_thumbnail(url='https://media.discordapp.net/attachments/1119100375681736878/1275733077590671381/kf2.png')
 
         return embed
