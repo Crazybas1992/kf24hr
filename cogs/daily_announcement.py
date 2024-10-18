@@ -92,9 +92,11 @@ class DailyAnnouncement(commands.Cog):
             name='๐ Spend Promotion',
             value='> สามารถดูรายละเอียดเพิ่มเติมได้ [ที่นี่](https://ro.gnjoy.in.th/spend-promotion-october-2024/)',
             inline=False
+        )
+            
         # เว้นระยะห่างหนึ่งบรรทัด
         embed.add_field(name="\n", value="\n", inline=False)
-
+            
         embed.add_field(
             name='✨ __รายการแก้ไข__',
             value=(
