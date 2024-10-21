@@ -56,7 +56,7 @@ class DailyAnnouncement(commands.Cog):
         now = datetime.utcnow()
         time_left = end_date - now
         if time_left.total_seconds() > 0:
-            description = f"{link}\n⏳``เหลือเวลาของกิจกรรมอีก {time_left.days} วัน {time_left.seconds // 3600} ชั่วโมง``⏳"
+            description = f"{link}\n⏳```เหลือเวลาของกิจกรรมอีก {time_left.days} วัน {time_left.seconds // 3600} ชั่วโมง```"
         else:
             description = f"❌``กิจกรรมนี้ได้สิ้นสุดลงแล้วเมื่อวันที่ {end_date.strftime('%d %B %Y')}``"
 
