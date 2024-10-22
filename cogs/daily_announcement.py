@@ -56,7 +56,7 @@ class DailyAnnouncement(commands.Cog):
         now = datetime.utcnow()
         time_left = end_date - now
         if time_left.total_seconds() > 0:
-            description = f"{link}\n⏳```เหลือเวลาของกิจกรรมอีก {time_left.days} วัน {time_left.seconds // 3600} ชั่วโมง```"
+            description = f"{link}\n```เหลือเวลาของกิจกรรมอีก {time_left.days} วัน {time_left.seconds // 3600} ชั่วโมง```"
         else:
             description = f"❌``กิจกรรมนี้ได้สิ้นสุดลงแล้วเมื่อวันที่ {end_date.strftime('%d %B %Y')}``"
 
@@ -93,7 +93,9 @@ class DailyAnnouncement(commands.Cog):
             value='> สามารถดูรายละเอียดเพิ่มเติมได้ [ที่นี่](https://ro.gnjoy.in.th/spend-promotion-october-2024/)',
             inline=False
         )
-            
+
+        embed.add_field(name='▂▂▂▂▂▂▂▂▂▂▂▂▂▂', value='', inline=False)
+        
         # เว้นระยะห่างหนึ่งบรรทัด
         embed.add_field(name="\n", value="\n", inline=False)
             
@@ -104,14 +106,17 @@ class DailyAnnouncement(commands.Cog):
             ),
             inline=False
         )
-    
+
+        embed.add_field(name='▂▂▂▂▂▂▂▂▂▂▂▂▂▂', value='', inline=False)
+
+        
         embed.add_field(name="\n", value="\n", inline=False)
 
         embed.add_field(name='✨ __Event Now!__', value='', inline=False)
         self.add_event(
             embed,
             title="๐ 📜 Ragnarok Online x Shiba Says",
-            link="ระยะเวลากิจกรรม 3 – 31 ตุลาคม 2567 (ก่อนปิดปรับปรุงเซิร์ฟเวอร์) [Click](https://ro.gnjoy.in.th/ragnarok-online-x-shibasays-event-guide/?fbclid=IwY2xjawFrql5leHRuA2FlbQIxMAABHTWr1Ttrcnft2oxytmbPDbtW0SAr4_VDhFzYv-wGRi5mF3y41JQn_c0rKQ_aem_uH_RpTdAJQgQOm_Lm4QqFA)",
+            link="> ⏰ ระยะเวลากิจกรรม 3 – 31 ตุลาคม 2567 \n (ก่อนปิดปรับปรุงเซิร์ฟเวอร์) [Click](https://ro.gnjoy.in.th/ragnarok-online-x-shibasays-event-guide/?fbclid=IwY2xjawFrql5leHRuA2FlbQIxMAABHTWr1Ttrcnft2oxytmbPDbtW0SAr4_VDhFzYv-wGRi5mF3y41JQn_c0rKQ_aem_uH_RpTdAJQgQOm_Lm4QqFA)",
             end_date=datetime(2024, 10, 31)
         )
 
@@ -120,7 +125,7 @@ class DailyAnnouncement(commands.Cog):
         self.add_event(
             embed,
             title="๐ 📜 2024 Halloween Event",
-            link="ระยะเวลากิจกรรม : 17 ตุลาคม 2567 – 14 พฤศจิกายน 2567 [Click](https://ro.gnjoy.in.th/2024-halloween-event/)",
+            link="> ⏰ ระยะเวลากิจกรรม : 17 ตุลาคม 2567 – 14 พฤศจิกายน 2567 [Click](https://ro.gnjoy.in.th/2024-halloween-event/)",
             end_date=datetime(2024, 11, 14)
         )
 
@@ -129,8 +134,8 @@ class DailyAnnouncement(commands.Cog):
         self.add_event(
             embed,
             title="๐ 📜 Pao-Ying-Chub Top Up Promotion",
-            link="เกม เป้ายิงฉุบไต่หอคอย [Click](https://event.gnjoy.in.th/RagnarokOnline/RO4thClasses/Minigame)",
-            end_date=datetime(2024, 11, 12)
+            link="> ⏰ ระยะเวลากิจกรรม : 17 ตุลาคม 2567 – 11 ธันวาคม 2567 (23.59น.) [Click](https://event.gnjoy.in.th/RagnarokOnline/RO4thClasses/Minigame)",
+            end_date=datetime(2024, 12, 11)
         )
 
         embed.add_field(name="\n", value="", inline=False)
@@ -138,17 +143,8 @@ class DailyAnnouncement(commands.Cog):
         self.add_event(
             embed,
             title="๐ 📜 ROS2024 Merchant",
-            link="Ragnarok Stars 2024 รายละเอียดกิจกรรมทั้งหมด [Click](https://ro.gnjoy.in.th/ragnarok-stars-2024-all-events/)",
+            link="> ⏰ ระยะเวลากิจกรรม : 22 สิงหาคม 2567 – 28 พฤศจิกายน 2567 \n (ก่อนปิดปรับปรุงเซิร์ฟเวอร์) [Click](https://ro.gnjoy.in.th/ragnarok-stars-2024-all-events/)",
             end_date=datetime(2024, 11, 28)
-        )
-
-        embed.add_field(name="\n", value="", inline=False)
-
-        self.add_event(
-            embed,
-            title="๐ 📜 Shadow of Nidhoggur’s Box Top Up Promotion",
-            link="ระยะเวลาโปรโมชั่น : 17 ตุลาคม 2567 (12:00) – 22 ตุลาคม 2567 (23:59) [Click](https://ro.gnjoy.in.th/shadow-of-nidhoggurs-box-top-up-promotion/)",
-            end_date=datetime(2024, 10, 22)
         )
 
         # เพิ่มข้อมูลพื้นฐานอื่นๆ
