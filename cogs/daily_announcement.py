@@ -25,7 +25,7 @@ class DailyAnnouncement(commands.Cog):
         # ตรวจสอบเวลาเป้าหมายในวันนี้
         if now.hour == 8 and now.minute == 30: 
             print(f"Sending announcement at {now.isoformat()}")
-            expiration_date = datetime(2024, 10, 23, 12, 0, tzinfo=timezone(timedelta(hours=7)))  # วันที่และเวลาหมดอายุ
+            expiration_date = datetime(2024, 10, 30, 12, 0, tzinfo=timezone(timedelta(hours=7)))  # วันที่และเวลาหมดอายุ
             if now >= expiration_date:
                 return  # หากวันที่หมดอายุผ่านไปแล้ว ให้หยุดประกาศ
 
@@ -69,28 +69,18 @@ class DailyAnnouncement(commands.Cog):
         embed = discord.Embed(
             title='📢 __รายการอัปเดตประจำสัปดาห์__ 📢',
             color=0x66FFFF,
-            description='[รายการอัปเดต วันที่ 17 ตุลาคม 2567](https://ro.gnjoy.in.th/patch-update-17-october-2567/?fbclid=IwY2xjawF-C6RleHRuA2FlbQIxMAABHdwWML2yuQKhCUlfmGy5AFxDjMrw2wTNxpWUaZrC9EFiKfewiWau8B4wRw_aem_I70Kpo7ayHervakv8bdIUw)',
+            description='[รายการอัปเดต วันที่ 24 ตุลาคม 2567](https://ro.gnjoy.in.th/patch-update-24-october-2567/)',
         )
         
         embed.add_field(name='✨ __รายการอัปเดต__', value='', inline=False)
         embed.add_field(
-            name='๐ Year of Dragon Scroll',
-            value='> ไข่ใหม่สามารถดูรายละเอียดเพิ่มเติมได้ [ที่นี่](https://ro.gnjoy.in.th/year-of-dragon-scroll/)',
+            name='๐ Ragnarok Online X The Ragnarok',
+            value='> สามารถดูรายละเอียดเพิ่มเติมได้ [ที่นี่](https://ro.gnjoy.in.th/ragnarok-online-x-the-ragnarok/?fbclid=IwY2xjawGHU7dleHRuA2FlbQIxMAABHYZochtUBTya4wKCRmh1N9uxJuT7Ejf1a3rjmWPl3abayfVWRwWNbo7Skg_aem_5a3lE9PUbunCYRtkRrQm6g)',
             inline=False
         )
         embed.add_field(
-            name='๐ Dragon Skull Guarantee Exchange',
-            value='> สามารถดูรายละเอียดเพิ่มเติมได้ [ที่นี่](https://ro.gnjoy.in.th/dragon-skull-guarantee-exchange/)',
-            inline=False
-        )
-        embed.add_field(
-            name='๐ Flash Sale Starter Pack',
-            value='> สามารถดูรายละเอียดเพิ่มเติมได้ [ที่นี่](https://ro.gnjoy.in.th/flash-sale-starter-pack/)',
-            inline=False
-        )
-        embed.add_field(
-            name='๐ Spend Promotion',
-            value='> สามารถดูรายละเอียดเพิ่มเติมได้ [ที่นี่](https://ro.gnjoy.in.th/spend-promotion-october-2024/)',
+            name='๐ Ragnarok Festa Reward',
+            value='> NPC Valkyries (กลางเมือง izlude) \n ตำแหน่ง : /navi izlude 130/16 \n เมื่อใช้งาน [Event] 4th Test Pass จะเปลี่ยนอาชีพคลาส 4 ให้กับผู้เล่น',
             inline=False
         )
 
@@ -153,7 +143,7 @@ class DailyAnnouncement(commands.Cog):
         embed.add_field(name='Website Gnjoy : https://www.gnjoy.in.th/', value='', inline=False)
         embed.add_field(name='Instagram : https://www.instagram.com/gravitygametech_official/', value='', inline=False)
         
-        embed.set_image(url='https://media.discordapp.net/attachments/1173912177585963048/1296493700268036166/463611808_557324230016308_1916647546017512476_n.png?ex=67127d59&is=67112bd9&hm=50f16e0eec6d09b131354d24183a4b050a9f9d644bec64f815d41561f1727ef9&=&format=webp&quality=lossless&width=1706&height=1138')
+        embed.set_image(url='https://media.discordapp.net/attachments/1173912177585963048/1299044744093106186/464333560_562127592869305_1188082432395752027_n.png?ex=671bc532&is=671a73b2&hm=93c12d4fcbcbe75bd7a6af3e3532fc2a253e8cad5421d322a00f6dd71c79accb&=&format=webp&quality=lossless&width=1050&height=700')
         embed.set_thumbnail(url='https://media.discordapp.net/attachments/1119100375681736878/1275733077590671381/kf2.png')
 
         return embed
